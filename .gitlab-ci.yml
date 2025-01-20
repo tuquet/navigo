@@ -5,7 +5,7 @@ variables:
   BUILD_FOLDER: /var/www/doc-automation
 
 before_script:
-  - apk add --no-cache openssh
+  - apt-get update && apt-get install -y openssh-client
   - mkdir -p ~/.ssh
   - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
   - chmod 600 ~/.ssh/id_rsa
@@ -13,6 +13,7 @@ before_script:
 
 build:
   stage: build
+  image: debian:latest
   script:
     - ssh -o StrictHostKeyChecking=no $SSH_USER@$HOSTING "
       cd $BUILD_FOLDER && 
