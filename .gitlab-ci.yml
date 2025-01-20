@@ -16,6 +16,7 @@ build:
   image: debian:latest
   script:
     - ssh -o StrictHostKeyChecking=no $SSH_USER@$HOSTING "
+      export PATH=\$PATH:/usr/local/bin && 
       cd $BUILD_FOLDER && 
       git reset HEAD --hard && 
       git pull && 
