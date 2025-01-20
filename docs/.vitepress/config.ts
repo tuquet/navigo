@@ -65,7 +65,7 @@ const config = defineConfig({
         },
         {
           text: "Workflow",
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: "Overview", link: "/workflow/overview" },
             {
@@ -357,7 +357,7 @@ const config = defineConfig({
         },
         {
           text: "Reference",
-          collapsed: false,
+          collapsed: true,
           items: [
             { text: "Storage", link: "/reference/storage" },
             { text: "Packages", link: "/reference/packages" },
@@ -374,7 +374,7 @@ const config = defineConfig({
         },
         {
           text: "Integrations",
-          collapsed: false,
+          collapsed: true,
           items: [{ text: "Google Drive", link: "/integrations/google-drive" }],
         },
       ],
