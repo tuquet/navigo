@@ -37,4 +37,4 @@ And you'll see the inputs and outputs of the package block when using it in a wo
 
 ![Package block with IO](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17b5bh-2q.png)
 
-And when you connect a block to one of the package block inputs, Automa will start executing from the block you set as the input in the package.
+And when you connect a block to one of the package block inputs, Navigo will start executing from the block you set as the input in the package.

@@ -1,17 +1,17 @@
 ---
-title: Automa Chrome Extension Builder Overview
+title: Navigo Chrome Extension Builder Overview
 ---
 
-# Automa Chrome Extension Builder
+# Navigo Chrome Extension Builder
 
-Automa Chrome Extension Builder (Automa CEB for short) allows you to generate a standalone chrome extension based on Automa workflows. You can share this extension with another user for them to install on their browser or publish the extension to the [Chrome Web Store](https://chrome.google.com/webstore/).
+Navigo Chrome Extension Builder (Navigo CEB for short) allows you to generate a standalone chrome extension based on Navigo workflows. You can share this extension with another user for them to install on their browser or publish the extension to the [Chrome Web Store](https://chrome.google.com/webstore/).
 
 :::tip Note
-Automa Chrome Extension Builder is still in **Beta**. If you find a bug or a missing feature, feel free to send a message on the [Automa Discord Server](https://discord.gg/C6khwwTE84).
+Navigo Chrome Extension Builder is still in **Beta**. If you find a bug or a missing feature, feel free to send a message on the [Navigo Discord Server](https://discord.gg/C6khwwTE84).
 :::
 
 ## Quick Start
-A quick start on how to create your first extension using the Automa CEB, open the extensions page by clicking the ["My extension"](https://www.automa.site/extensions) button on the [automa website](https://www.automa.site). 
+A quick start on how to create your first extension using the Navigo CEB, open the extensions page by clicking the ["My extension"](https://www.automa.site/extensions) button on the [automa website](https://www.automa.site). 
 
 Click the "New extension" button to add a new extension, and input the extension name and description.
 
@@ -24,7 +24,7 @@ Open the extension, and you can change the extension icon or rename it on the de
 And to add workflows to the extension, navigate to the workflows tab and click the "+ Workflows" button. There are two ways you can add workflows to the extension:
 
 1. Selecting the JSON files of the workflows 
-2. Importing the workflows from the Automa extension.
+2. Importing the workflows from the Navigo extension.
 
 ![Add workflows](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/o5t5n-lu.png)
 

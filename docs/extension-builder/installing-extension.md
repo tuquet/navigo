@@ -4,7 +4,7 @@ title: Installing Extension
 
 # Installing Extension
 
-The extension zip file you downloaded from the Automa Chrome Extension Builder dashboard; can be installed on a Chromium-based browser such as Google Chrome, Microsoft Edge, Brave, etc. 
+The extension zip file you downloaded from the Navigo Chrome Extension Builder dashboard; can be installed on a Chromium-based browser such as Google Chrome, Microsoft Edge, Brave, etc. 
 
 To install the extension to one of those browsers:
 1. Open the `chrome://extensions` page

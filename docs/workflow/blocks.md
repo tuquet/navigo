@@ -3,12 +3,12 @@ title: Blocks
 ---
 
 # Blocks
-There are six categories of blocks in Automa:
+There are six categories of blocks in Navigo:
 - **General**: Perform a general action in the workflow, like making an HTTP request or executing another workflow.
 - **Browser**: To control the browser.
 - **Web Interaction**: To interact with the active tab of the workflow. Before using blocks in this category, you need to use a [New Tab](../blocks/new-tab.md) or [Active Tab](../blocks/active-tab.md) block.
 - **Control Flow**: Add logic to the workflow.
-- **Online Services**: Services that integrate with Automa.
+- **Online Services**: Services that integrate with Navigo.
 - **Data**: Modify or manipulate workflow variables or tables.
 
 ## Block Settings

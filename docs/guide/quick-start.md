@@ -3,22 +3,22 @@ title: Quick Start
 ---
 
 # Quick Start
-This section gives you a quick taste of Automa by building your first workflow. In Automa, there are two ways to create a workflow:
+This section gives you a quick taste of Navigo by building your first workflow. In Navigo, there are two ways to create a workflow:
 1. By recording your actions on the web
 2. Manually
 
 ## Recording Actions
 
-The recording is the easiest way to build a workflow in Automa. To get started, open the Automa dashboard by clicking the Automa icon on the top right. After that, click the arrow down icon <v-remixicon name="riArrowLeftSLine" rotate="-90" /> and select the "Record workflow" menu.
+The recording is the easiest way to build a workflow in Navigo. To get started, open the Navigo dashboard by clicking the Navigo icon on the top right. After that, click the arrow down icon <v-remixicon name="riArrowLeftSLine" rotate="-90" /> and select the "Record workflow" menu.
 
 ![start recording](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/11/29/ztyhv-eg.png)
 
-When Automa starts recording, it will record all your actions, like creating a new tab, scrolling, clicking, and typing.
+When Navigo starts recording, it will record all your actions, like creating a new tab, scrolling, clicking, and typing.
 While recording, you can also select an element to retrieve the text or attribute value from it.
 
 ![Select element](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/11/29/ztyhu-qm.png)
 
-To stop the recording, open the Automa popup and click the ⏹️ button. To learn more about recording a workflow, you can watch the video tutorial about it.
+To stop the recording, open the Navigo popup and click the ⏹️ button. To learn more about recording a workflow, you can watch the video tutorial about it.
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/NmRCgLtsPnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -30,7 +30,7 @@ If you already create a workflow and want to start recording from a specific blo
 ## Manually
 
 To create a workflow manually:
-1. Open the Automa dashboard by clicking the Automa icon on the top right.
+1. Open the Navigo dashboard by clicking the Navigo icon on the top right.
 2. Click the "New workflow" button and input the name and description for the workflow.
 3. And open the workflow that you just created.
 

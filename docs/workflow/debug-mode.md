@@ -3,12 +3,12 @@ title: Debug Mode
 ---
 
 # Debug Mode
-When the debug mode is enabled, Automa will use Chrome Devtools Protocol API (or “CDP” for short) to emulate user Actions like clicking and typing instead of using JavaScript API.
+When the debug mode is enabled, Navigo will use Chrome Devtools Protocol API (or “CDP” for short) to emulate user Actions like clicking and typing instead of using JavaScript API.
 
-And the debug mode is only available in the chromium version of Automa.
+And the debug mode is only available in the chromium version of Navigo.
 
 ## Activate Debug Mode
-There are two ways to activate the debug mode, the first is by going to the workflow settings, and the second is by going to the block settings. When you enable the debug mode in the workflow settings, Automa will use CDP API on the whole block. 
+There are two ways to activate the debug mode, the first is by going to the workflow settings, and the second is by going to the block settings. When you enable the debug mode in the workflow settings, Navigo will use CDP API on the whole block. 
 
 ![workflow settings](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16oapo-0c.png)
 
@@ -23,4 +23,4 @@ Or when you want to perform a click action using an X and Y coordinate using the
 
 ![Trigger event block](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16oapo-9u.png)
 
-Automa isn't able to emulate typing or clicking on those situation by using JavaScript API.
+Navigo isn't able to emulate typing or clicking on those situation by using JavaScript API.

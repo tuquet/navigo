@@ -18,7 +18,7 @@ When using the custom data option, make sure you write [array](https://developer
 ["one", "two", 3, 4, { "key": "value" }]
 ```
 
-And when you select the `elements` options, Automa will return an array of selectors of the elements that match the `selector` you inputted. And you can use the loop data block like below.
+And when you select the `elements` options, Navigo will return an array of selectors of the elements that match the `selector` you inputted. And you can use the loop data block like below.
 
 ![Loop elements](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/mgcyq-dr.png)
 

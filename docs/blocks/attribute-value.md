@@ -29,7 +29,7 @@ Get the value of the specified attribute from the element.
 
 ## Find Element Attribute Name
 
-To find the attribute name, you can use the [Automa Element Picker](../workflow/element-selector.md#generating-selector). You need to select an element first, and you'll find list of attributes the element has under it
+To find the attribute name, you can use the [Navigo Element Picker](../workflow/element-selector.md#generating-selector). You need to select an element first, and you'll find list of attributes the element has under it
 
 ![Attributes](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/18cqs4-za.png)
 

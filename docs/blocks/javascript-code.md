@@ -9,7 +9,7 @@ Execute your javascript code on the website.
 Javascript code execution timeout, default to 20000ms (20 seconds). If it reaches the timeout, the workflow will continue to execute the next block.
 
 ## Execute Every New Tab
-This will execute the javascript code every time Automa creates a new tab or switches a tab. When this option is enabled, the javascript code block no longer requires an active tab to work and built-in functions like `automaRefData`, `automaNextBlock`, etc; will not be available. For example
+This will execute the javascript code every time Navigo creates a new tab or switches a tab. When this option is enabled, the javascript code block no longer requires an active tab to work and built-in functions like `automaRefData`, `automaNextBlock`, etc; will not be available. For example
 
 ![execute every new tab](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/18ft25-8p.png)
 

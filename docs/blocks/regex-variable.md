@@ -11,4 +11,4 @@ Matching a variable value against a [regular expression](https://developer.mozil
 
 - **RegEx** <br>
 	The regular expression will use to match the variable value. <br>
-	For example, `\d+` with this expression, Automa will only return the numbers inside the variable value
+	For example, `\d+` with this expression, Navigo will only return the numbers inside the variable value

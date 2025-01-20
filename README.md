@@ -1,4 +1,4 @@
-# Automa Documentation
+# Navigo Documentation
 📝 Documentation for the [automa](https://github.com/kholid060/automa) chrome extension.
 
 ## Building the Documentation

@@ -20,11 +20,11 @@ This feature allows you to set a dynamic value for a block based on data from:
 | `activeTabUrl` | Get the active tab url | `activeTabUrl` |
 | `workflow` | Get the data ([Table](./table.md) and [Variables](./variables.md)) of the workflow that have been execute by the [Execute Workflow block](/blocks/execute-workflow.md) | `workflow.<executeId>` |
 
-Automa uses mustache templating and extends it with data from above and functions.
+Navigo uses mustache templating and extends it with data from above and functions.
 
 ## Writing Expression
 
-To write an expression, you must follow this format "<code v-pre>{{ keyword }}</code>"; and replace the `keyword` with one of the above data sources. It allows Automa to differentiate between static and dynamic data.
+To write an expression, you must follow this format "<code v-pre>{{ keyword }}</code>"; and replace the `keyword` with one of the above data sources. It allows Navigo to differentiate between static and dynamic data.
 
 Let's say you have a variable inside the workflow, and the variable name is `socials`; its value is an array of objects. You want to send this variable to an API using the [HTTP Request block](../blocks/webhook.md).
 
@@ -61,7 +61,7 @@ To access other data inside the expression, you must wrap the expression for acc
 
 ## Functions
 
-All built-in functions always start with the prefix `$`; for example, `$funcName(param)`; And here are reference list of available functions in Automa.
+All built-in functions always start with the prefix `$`; for example, `$funcName(param)`; And here are reference list of available functions in Navigo.
 
 
 ### `$date(date, dateFormat?)`
@@ -232,7 +232,7 @@ $modulo(-4, 2) // -0
 ```
 
 ### `$filter(data, syntax)`
-Filter/Query javascript object. Automa is using [JSONPath](https://github.com/dchester/jsonpath) library to do querying.
+Filter/Query javascript object. Navigo is using [JSONPath](https://github.com/dchester/jsonpath) library to do querying.
 
 - `data`: Javascript object to query
 - `syntax`: [JSONPath Syntax](https://github.com/dchester/jsonpath#jsonpath-syntax)
@@ -334,7 +334,7 @@ The variables is stored as an object with the variable name as the object key.
 Only supported in the chromium based browser
 :::
 
-Automa also supports javascript within the expression, but to write a javascript, you must add `!!` characters as the first value on a text field of a block. For example, from <code v-pre>The number is: {{variables.number}}</code> to <code v-pre>!!The number is: {{variables.number}}</code>.
+Navigo also supports javascript within the expression, but to write a javascript, you must add `!!` characters as the first value on a text field of a block. For example, from <code v-pre>The number is: {{variables.number}}</code> to <code v-pre>!!The number is: {{variables.number}}</code>.
 
 ![JS Expression](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16vjb0-5t.png)
 

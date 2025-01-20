@@ -13,7 +13,7 @@ When you create a new extension, it will be assigned with the 1.0.0 draft versio
 
 ![Dashboard header](https://res.cloudinary.com/chat-story/image/upload/v1670303512/automa/NVIDIA_Share_0q2NIpRCNx_vdr2xw.png)
 
-And to publish the draft version, click the publish button, and once it is published, you can't change or edit the version you published. However,  when publishing the extension, Automa will automatically create a new draft version where the version number is incremented by one. For example, when the draft version is 1.0.0, and you publish that version, the new draft version will be 2.0.0. And you edit the extension whatever you want on the draft version.
+And to publish the draft version, click the publish button, and once it is published, you can't change or edit the version you published. However,  when publishing the extension, Navigo will automatically create a new draft version where the version number is incremented by one. For example, when the draft version is 1.0.0, and you publish that version, the new draft version will be 2.0.0. And you edit the extension whatever you want on the draft version.
 
 ## Download Extension File
 

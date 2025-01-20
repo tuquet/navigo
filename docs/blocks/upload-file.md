@@ -24,9 +24,9 @@ Upload file into an `<input type="file">` element.
 		- `my file.json|application/json|eyJleHRWZXJzaW9uIjoiMS4xNi4yIiwibmFtZSI6...`
 
 ## Requirements
-In order for this block to work, you must allow Automa to access the files by enabling the "Allow access to file URLs" option.
+In order for this block to work, you must allow Navigo to access the files by enabling the "Allow access to file URLs" option.
 - Open `chrome://extensions`
-- Find Automa and click the "Detail" button
+- Find Navigo and click the "Detail" button
 - Scroll down and enable "Allow access to file URLs"
 
 ## Find the Upload File Selector

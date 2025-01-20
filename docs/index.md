@@ -3,10 +3,10 @@ title: Getting started
 ---
 
 # Welcome
-This is the documentation for [Automa](https://www.automa.site). Automa is a low-code/no-code browser extension for to do browser automation. Instead of manually typing, clicking, and retrieving data from a website, Automa will help you automate doing all that.
+This is the documentation for [Navigo](https://www.automa.site). Navigo is a low-code/no-code browser extension for to do browser automation. Instead of manually typing, clicking, and retrieving data from a website, Navigo will help you automate doing all that.
 
 ## Installing Extension
-Automa currently only supports Google Chrome And Firefox. And to install it, click one of the below buttons.
+Navigo currently only supports Google Chrome And Firefox. And to install it, click one of the below buttons.
 
 <div style="display: flex">
   <div style="margin-right: 40px">
@@ -24,4 +24,4 @@ Automa currently only supports Google Chrome And Firefox. And to install it, cli
 </div>
 
 ## Tutorials
-For the Automa tutorials, you can go to the [Tutorials section](https://www.automa.site/tutorials).
+For the Navigo tutorials, you can go to the [Tutorials section](https://www.automa.site/tutorials).

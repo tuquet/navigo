@@ -16,7 +16,7 @@ Use this block when you have branched blocks in the workflow.
 ## Only Continue a Specific Flow
 Whether only to continue a specific flow or not. 
 
-When you have a block branched as in the above image, Automa will create a new "Worker" for every new branch where the job is to execute the blocks on that branch.
+When you have a block branched as in the above image, Navigo will create a new "Worker" for every new branch where the job is to execute the blocks on that branch.
 
 ![branches](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17yal7-1a.png)
 

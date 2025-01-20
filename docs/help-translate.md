@@ -4,7 +4,7 @@ title: Help Translate
 
 # Help Translate
 
-Help translate Automa extension into your target language. To get started, create an issue first about what language you want to add so a conflict could be avoidable.
+Help translate Navigo extension into your target language. To get started, create an issue first about what language you want to add so a conflict could be avoidable.
 
 Fork the automa repository and clone it into your local machine. Create a new branch called `locale-LANGUAGE-CODE`, replace `LANGUAGE-CODE` with the [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) code of the language, for example `en` for English. After that, switch to that branch.
 

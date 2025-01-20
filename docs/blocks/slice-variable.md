@@ -11,7 +11,7 @@ Extracts a section of a variable value.
 
 - **Start index** <br>
 	The zero-based index at which to begin extraction.
-	If the start index is negative, Automa begins the extraction from the end of the value.
+	If the start index is negative, Navigo begins the extraction from the end of the value.
 
 - **End index** <br>
 	The index of the first element to exclude.

@@ -7,15 +7,15 @@ title: Element Selector
 The element selector is used to identify the elements on the page when interacting or extracting data from the page.
 For example, if you want the workflow to fill a specific form input on the page using the [Forms block](../blocks/forms.md), it needs to know which input elements to fill up. With the `input.form-name` selector, it tells the workflow to fill an [`<input />`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) element with `form-name` [classes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/class).
 
-In Automa, you can select an element using the [CSS Selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) or [XPath expression](https://www.w3schools.com/xml/xpath_syntax.asp).
+In Navigo, you can select an element using the [CSS Selector](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) or [XPath expression](https://www.w3schools.com/xml/xpath_syntax.asp).
 
 ## Block Selector Options
 You'll find these options when editing a block that requires an element selector to work, such as the [Click Element](../blocks/event-click.md) and the [Get Text block](../blocks/get-text.md).
 
 ### Multiple
-Select multiple elements that match the selector. By default, Automa only selects the first element that matches the Selector.
+Select multiple elements that match the selector. By default, Navigo only selects the first element that matches the Selector.
 
-For example, when using the [Get Text block](/blocks/get-text.md) with `p` as the selector. Instead of retrieving text content from the first element that matches the selector, Automa will retrieve all the text content from the matches elements.
+For example, when using the [Get Text block](/blocks/get-text.md) with `p` as the selector. Instead of retrieving text content from the first element that matches the selector, Navigo will retrieve all the text content from the matches elements.
 
 ### Mark Element
 Mark the element that has been selected. Meaning that the element will not be selected if it has been selected before by the same block. 
@@ -50,10 +50,10 @@ When the Get text block is executed for the second time, It will do the same thi
 Wait for the `selector` to appear on the page.  If at the moment of checking the `selector` and the `selector` already exists, the block immediately gets executed.  If the `selector` doesn't appear after the given time in the `timeout` text field, the workflow will throw an error.
 
 ## Generating Selector
-If you don't know how to write your own selector, you can use the Automa Element Selector or the "Select" button on the block.
-Automa Element Selector
+If you don't know how to write your own selector, you can use the Navigo Element Selector or the "Select" button on the block.
+Navigo Element Selector
 
-In the Automa Dashboard, click the <v-remixicon name="riFocus3Line" /> button on the sidebar, And Automa will inject an element picker into the current page. You can click or press the `Space` key to select an element. It will automatically generate a selector for the selected element. 
+In the Navigo Dashboard, click the <v-remixicon name="riFocus3Line" /> button on the sidebar, And Navigo will inject an element picker into the current page. You can click or press the `Space` key to select an element. It will automatically generate a selector for the selected element. 
 
 ![Element picker](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16sv6u-n6.png)
 
@@ -62,7 +62,7 @@ And you'll find the "Select an element" button when editing a block. When you cl
 ![Select an element button](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16sv6u-4q.png)
 
 ## Custom Selector Syntax
-Besides supporting the standard [CSS Selector](https://www.w3.org/TR/selectors-4/) and XPath expression, Automa supports a non-standard syntax:
+Besides supporting the standard [CSS Selector](https://www.w3.org/TR/selectors-4/) and XPath expression, Navigo supports a non-standard syntax:
 - `iframe-selector |> element-selector`: allows to select an element inside an [iframe](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe) element. For example, `iframe.result |> button.primary-btn`
 - `:contains(TEXT)`: select an element based on its text. For example, `p.description:contains("cat")`
 - `shadow-dom-selector >> element-selector`: select an element inside a [shadow DOM](https://web.dev/shadowdom-v1/). For example, `div.app-container >> h1.title`

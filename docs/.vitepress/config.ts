@@ -15,8 +15,8 @@ declare global {
 
 const config = defineConfig({
   lang: "en-US",
-  title: "Automa Docs",
-  description: "Documentation for Automa Browser Extension",
+  title: "Navigo Docs",
+  description: "Documentation for Navigo Browser Extension",
   head: [
     ["link", { rel: "icon", type: "image/x-icon", href: "/images/logo.png" }],
     [

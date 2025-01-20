@@ -4,7 +4,7 @@ title: JavaScript Execution Context
 
 # JavaScript Execution Context
 Execution context means the environment where the JavaScript code will execute.
-In Automa, there are two environments you can choose from, Active Tab and Background.
+In Navigo, there are two environments you can choose from, Active Tab and Background.
 
 ## Active Tab
 
@@ -24,4 +24,4 @@ If you see the `Refused to execute inline script because it violates the followi
 
 The workflow executes your JS code inside a sandbox. If your code doesn't do anything related to DOM, select this environment as the execution context. And it doesn't require an active tab to work.
 
-And if you want to do debugging, for example using the `console.log` method. You can find the output by opening the Chrome Devtools on the Automa dashboard.
+And if you want to do debugging, for example using the `console.log` method. You can find the output by opening the Chrome Devtools on the Navigo dashboard.

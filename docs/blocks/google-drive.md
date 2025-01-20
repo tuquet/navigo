@@ -6,7 +6,7 @@ title: Google Drive
 
 Upload files into your Google Drive.
 
-You must connect [Google Drive with your Automa account](../integrations/google-drive.md) to use this block.
+You must connect [Google Drive with your Navigo account](../integrations/google-drive.md) to use this block.
 
 ## Upload files
 Upload a file or multiple files into your Google Drive.
@@ -17,7 +17,7 @@ Upload a file or multiple files into your Google Drive.
     the URL of the file. For example, `https://example.com/file.zip`
   - **Local computer** <br> 
     the absolute path of the file. For example, `C:\users\downloads\file.zip` or `/Users/Josh/Desktop/docs.pdf`.<br>
-    To use this option, you must [allow Automa to access the file URLs](./upload-file.md#requirements).
+    To use this option, you must [allow Navigo to access the file URLs](./upload-file.md#requirements).
   - **Download id** <br> 
     The download id of the file that has been downloaded. For example, `1010`
 

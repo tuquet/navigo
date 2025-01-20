@@ -4,7 +4,7 @@ title: Google Sheets (GDrive)
 
 # Google Sheets (GDrive)
 
-The Google Sheets (GDrive) block serves the same purpose as the [Google Sheets block](./google-sheets.md). The differences are that this block requires you to [connect Google Drive](../integrations/google-drive.md) to your Automa account before you can use it, and it has another feature, like creating a spreadsheet.
+The Google Sheets (GDrive) block serves the same purpose as the [Google Sheets block](./google-sheets.md). The differences are that this block requires you to [connect Google Drive](../integrations/google-drive.md) to your Navigo account before you can use it, and it has another feature, like creating a spreadsheet.
 
 So, to view the documentation on how to get, update, or clear values in a Google Sheet, open the [Google Sheets block page](./google-sheets.md).
 

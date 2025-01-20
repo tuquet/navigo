@@ -34,7 +34,7 @@ Execute a workflow via the context menu (right-clicking). When a workflow is exe
 - `$ctxMediaUrl`: The source URL of a media element (image, video, or audio)
 - `$ctxLink`: The URL if you right-click on a link
 
-But to use this trigger, you must grant Automa to use the `contextMenu` permission. This trigger has two options
+But to use this trigger, you must grant Navigo to use the `contextMenu` permission. This trigger has two options
 
 - The workflow name in the context menu
 - `Will appear in` which you can use to set when the workflow appears in the context menu. If none of these options is selected, it will appear every time the 
@@ -91,7 +91,7 @@ If the `automa:exeucte-workflow` event not working, you can replace it with `__a
 :::
 
 ## Trigger Through URL
-From version v1.28.26 you will be able to execute Automa workflow through an URL, to do this you only need to create a new tab in your browser and input this URL `chrome-extension://infppggnoaenmfagbfknfkancpbljcca/execute.html#/workflowId`, replace the `workflowId` with the id of the workflow you want to execute.
+From version v1.28.26 you will be able to execute Navigo workflow through an URL, to do this you only need to create a new tab in your browser and input this URL `chrome-extension://infppggnoaenmfagbfknfkancpbljcca/execute.html#/workflowId`, replace the `workflowId` with the id of the workflow you want to execute.
 
 You can also pass variables to the workflow by adding a query to that URL. For example, `chrome-extension://infppggnoaenmfagbfknfkancpbljcca/execute.html#/workflowId?variableA=value&variableB=10`
 

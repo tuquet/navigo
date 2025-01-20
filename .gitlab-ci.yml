@@ -1,0 +1,23 @@
+stages:
+  - build
+
+variables:
+  BUILD_FOLDER: /var/www/doc-automation
+
+before_script:
+  - apk add --no-cache openssh
+  - mkdir -p ~/.ssh
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+  - chmod 600 ~/.ssh/id_rsa
+  - if [ -n "$HOSTING" ]; then ssh-keyscan $HOSTING >> ~/.ssh/known_hosts; fi
+
+build:
+  stage: build
+  script:
+    - ssh -o StrictHostKeyChecking=no $SSH_USER@$HOSTING "
+      cd $BUILD_FOLDER && 
+      git reset HEAD --hard && 
+      git pull && 
+      npm run docs:build"
+  only:
+    - main

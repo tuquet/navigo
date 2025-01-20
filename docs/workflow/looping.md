@@ -6,7 +6,7 @@ title: Looping
 
 Looping allows you to perform the same actions repeatedly and only stops after it loops all the items.
 
-Looping is helpful when you want to process multiple similar items, for example filling forms where the value is from a Google Sheets. There are several ways to do looping in Automa:
+Looping is helpful when you want to process multiple similar items, for example filling forms where the value is from a Google Sheets. There are several ways to do looping in Navigo:
 
 1. Use the [Loop Data block](../blocks/loop-data.md) to loop through a [variable](./variables.md), [table](./table.md), [google sheets](../blocks/google-sheets.md) or custom JSON Array.
 2. Use the [Loop Elements](../blocks/loop-elements.md) block to loop through elements on the page.
@@ -38,7 +38,7 @@ The <code v-pre>{{loopData.loopId}}</code> expression will return:
   "$index": 1
 }
 ```
-So if you want to access the index of the loop, you can use [expressions](./expressions.md) like <code v-pre>{{loopData.loopId.$index}}</code>; And to get the loop value, you don't need to write the `data` property like <code v-pre>{{loopData.loopId.data}}</code>; Automa will automatically assign it to the expressions. But if you use [JavaScript expressions](./expressions.md#javascript-expressions), you must include the `data` property <code v-pre>!!{{loopData.loopId.data}}</code>
+So if you want to access the index of the loop, you can use [expressions](./expressions.md) like <code v-pre>{{loopData.loopId.$index}}</code>; And to get the loop value, you don't need to write the `data` property like <code v-pre>{{loopData.loopId.data}}</code>; Navigo will automatically assign it to the expressions. But if you use [JavaScript expressions](./expressions.md#javascript-expressions), you must include the `data` property <code v-pre>!!{{loopData.loopId.data}}</code>
 
 ## Using the Repeat Task Block
 

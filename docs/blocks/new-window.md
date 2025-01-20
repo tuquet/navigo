@@ -22,8 +22,8 @@ Create a new window.
 
 ## Incognito Window
 
-Set the new window as an incognito window. To use this option, you must enable the "Allow in Incognito" for the Automa extension. 
+Set the new window as an incognito window. To use this option, you must enable the "Allow in Incognito" for the Navigo extension. 
 
-You can find this option by going to `chrome://extensions` => find Automa => scroll down
+You can find this option by going to `chrome://extensions` => find Navigo => scroll down
 
 ![Allow in incognito](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/185qzp-dx.png)
