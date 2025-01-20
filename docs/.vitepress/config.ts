@@ -15,19 +15,19 @@ declare global {
 
 const config = defineConfig({
   lang: "en-US",
-  title: "Navigo Docs",
+  title: "Tài Liệu",
   description: "Documentation for Navigo Browser Extension",
   head: [
     ["link", { rel: "icon", type: "image/x-icon", href: "/images/logo.png" }],
-    [
-      "script",
-      {
-        src: "https://umami-v2-fawn.vercel.app/script.js",
-        async: "",
-        defer: "",
-        "data-website-id": "fd818e1e-e9aa-42b3-83a3-e233b5765aaa",
-      },
-    ],
+    // [
+    //   "script",
+    //   {
+    //     src: "https://umami-v2-fawn.vercel.app/script.js",
+    //     async: "",
+    //     defer: "",
+    //     "data-website-id": "fd818e1e-e9aa-42b3-83a3-e233b5765aaa",
+    //   },
+    // ],
   ],
   transformHtml: (_, id, { pageData }) => {
     if (!/[\\/]404\.html$/.test(id))
@@ -43,17 +43,17 @@ const config = defineConfig({
   themeConfig: {
     nav: [
       {
-        text: "Docs for v1.21.x or below",
+        text: "Tài liệu cho người mới bắt đầu",
         link: "https://automa-docs-old.vercel.app/",
       },
-      { text: "Extension Builder", link: "/extension-builder/" },
-      { text: "Help Translate", link: "/help-translate" },
+      // { text: "Extension Builder", link: "/extension-builder/" },
+      { text: "Giúp tôi", link: "/help-translate" },
     ],
-    algolia: {
-      apiKey: process.env.SEARCH_API_KEY,
-      appId: process.env.SEARCH_APP_ID,
-      indexName: process.env.SEARCH_INDEX_NAME,
-    },
+    // algolia: {
+    //   apiKey: process.env.SEARCH_API_KEY,
+    //   appId: process.env.SEARCH_APP_ID,
+    //   indexName: process.env.SEARCH_INDEX_NAME,
+    // },
     sidebar: {
       "/": [
         {
@@ -413,24 +413,21 @@ const config = defineConfig({
         },
       ],
     },
-    editLink: {
-      pattern:
-        "https://github.com/automaapp/documentation/edit/main/docs/:path",
-      text: "Edit this page on GitHub",
-    },
+    // editLink: {
+    //   pattern:
+    //     "https://github.com/automaapp/documentation/edit/main/docs/:path",
+    //   text: "Edit this page on GitHub",
+    // },
     logo: "/images/logo.png",
     lastUpdatedText: "Updated Date",
     socialLinks: [
-      { icon: "github", link: "https://github.com/automaapp/automa" },
-      { icon: "discord", link: "https://discord.gg/C6khwwTE84" },
-      {
-        icon: "youtube",
-        link: "https://www.youtube.com/channel/UCL3qU64hW0fsIj2vOayOQUQ",
-      },
-      { icon: "twitter", link: "https://twitter.com/AutomaApp" },
+      { icon: "facebook", link: "https://facebook.com/quet.jr" },
+      { icon: "github", link: "https://github.com/tuquet" },
+      { icon: "youtube", link: "https://github.com/tuquet" },
+      // { icon: "discord", link: "https://github.com/tuquet" },
+      // { icon: "twitter", link: "https://github.com/tuquet" },
     ],
   },
-  theme: './theme',
 });
 
 export default config;
