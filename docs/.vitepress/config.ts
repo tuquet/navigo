@@ -430,6 +430,7 @@ const config = defineConfig({
       { icon: "twitter", link: "https://twitter.com/AutomaApp" },
     ],
   },
+  theme: './theme',
 });
 
 export default config;

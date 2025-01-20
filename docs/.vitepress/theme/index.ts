@@ -3,6 +3,7 @@ import CustomLayout from './CustomLayout.vue';
 import CustomNotFound from './CustomNotFound.vue';
 import vRemixicon, { icons } from '../lib/vRemixicon';
 import './custom.css';
+import { watchThemeChange } from './theme-switcher.ts';
 
 export default {
   ...DefaultTheme,
@@ -10,5 +11,6 @@ export default {
   NotFound: CustomNotFound,
   enhanceApp({ app }) {
     app.use(vRemixicon, icons);
+    watchThemeChange();
   }
 }

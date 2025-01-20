@@ -8,8 +8,11 @@ export function watchThemeChange() {
     }
   }
 
+  updateTheme('dark');
+
   // Lắng nghe thông điệp từ iframe
   window.addEventListener('message', (event) => {
+    console.log('event', event);
     if (event.origin === 'https://docs.tfsoftware.vn') {
       const { theme } = event.data;
       if (theme) {
