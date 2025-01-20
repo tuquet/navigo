@@ -16,7 +16,7 @@ build:
   image: debian:latest
   script:
     - ssh -o StrictHostKeyChecking=no $SSH_USER@$HOSTING "
-      export PATH=\$PATH:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin && 
+      export PATH=\$PATH:/root/.nvm/versions/node/v20.18.0/bin && 
       cd $BUILD_FOLDER && 
       git reset HEAD --hard && 
       git pull && 
