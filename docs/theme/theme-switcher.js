@@ -1,6 +1,5 @@
+// filepath: /C:/Users/Admin/Desktop/documentation/docs/theme/theme-switcher.js
 export function watchThemeChange() {
-  const themeKey = 'tfsoft-web-preferences-theme'; // Key lưu trữ theme trong localStorage
-
   // Hàm để cập nhật theme
   function updateTheme(theme) {
     if (theme === 'dark') {
@@ -10,33 +9,13 @@ export function watchThemeChange() {
     }
   }
 
-  // Hàm để lấy giá trị theme từ localStorage
-  function getThemeFromLocalStorage() {
-    const themeData = localStorage.getItem(themeKey);
-    if (themeData) {
-      try {
-        const parsedData = JSON.parse(themeData);
-        return parsedData.value;
-      } catch (e) {
-        console.error('Error parsing theme data from localStorage', e);
-      }
-    }
-    return null;
-  }
-
-  // Theo dõi sự thay đổi của localStorage
-  window.addEventListener('storage', (event) => {
-    if (event.key === themeKey) {
-      const newTheme = getThemeFromLocalStorage();
-      if (newTheme) {
-        updateTheme(newTheme);
+  // Lắng nghe thông điệp từ iframe
+  window.addEventListener('message', (event) => {
+    if (event.origin === 'http://localhost:5888') {
+      const { theme } = event.data;
+      if (theme) {
+        updateTheme(theme);
       }
     }
   });
-
-  // Cập nhật theme khi tải trang
-  const currentTheme = getThemeFromLocalStorage();
-  if (currentTheme) {
-    updateTheme(currentTheme);
-  }
 }
