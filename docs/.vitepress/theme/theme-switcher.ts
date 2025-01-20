@@ -1,6 +1,7 @@
 export function watchThemeChange() {
+
+  // Nếu không phải là client-side, không làm gì cả
   if (typeof window === 'undefined') {
-    // Nếu không phải là client-side, không làm gì cả
     return;
   }
 
@@ -17,6 +18,7 @@ export function watchThemeChange() {
 
   // Lắng nghe thông điệp từ iframe
   window.addEventListener('message', (event) => {
+    console.log('event', event);
     if (event.origin === 'https://docs.tfsoftware.vn') {
       const { theme } = event.data;
       if (theme) {
