@@ -6,7 +6,7 @@ title: Getting started
 This is the documentation for [Navigo](https://www.automa.site). Navigo is a low-code/no-code browser extension for to do browser automation. Instead of manually typing, clicking, and retrieving data from a website, Navigo will help you automate doing all that.
 
 ## Installing Extension
-Navigo currently only supports Google Chrome And Firefox. And to install it, click one of the below buttons.
+Navigo hiện chỉ hỗ trợ Google Chrome và Firefox.Và để cài đặt nó, nhấp vào một trong các nút dưới đây.
 
 <div style="display: flex">
   <div style="margin-right: 40px">
