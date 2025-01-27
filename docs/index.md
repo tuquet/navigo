@@ -3,7 +3,7 @@ title: Getting started
 ---
 
 # Welcome
-Đây là tài liệu cho [Navigo] (https://www.automa.site).Navigo là một phần mở rộng trình duyệt mã thấp/không có mã cho tự động hóa trình duyệt.Thay vì gõ thủ công, nhấp và truy xuất dữ liệu từ một trang web, Navigo sẽ giúp bạn tự động hóa tất cả những điều đó.
+Đây là tài liệu cho hhhh [Navigo] (https://www.automa.site).Navigo là một phần mở rộng trình duyệt mã thấp/không có mã cho tự động hóa trình duyệt.Thay vì gõ thủ công, nhấp và truy xuất dữ liệu từ một trang web, Navigo sẽ giúp bạn tự động hóa tất cả những điều đó.
 
 ## Installing Extension
 Navigo hiện chỉ hỗ trợ Google Chrome và Firefox.Và để cài đặt nó, nhấp vào một trong các nút dưới đây.

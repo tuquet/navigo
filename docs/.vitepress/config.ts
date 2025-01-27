@@ -65,7 +65,31 @@ const config = defineConfig({
         },
         {
           text: "Workflow",
-          collapsed: true,
+          collapsed: false,
+          items: [
+            { text: "Overview", link: "/workflow/overview" },
+            {
+              text: "Running a Workflow",
+              link: "/workflow/running-a-workflow",
+            },
+            { text: "Blocks", link: "/workflow/blocks" },
+            { text: "Sharing a Workflow", link: "/workflow/sharing-workflow" },
+            { text: "Global Data", link: "/workflow/global-data" },
+            { text: "Table", link: "/workflow/table" },
+            { text: "Variables", link: "/workflow/variables" },
+            { text: "Table or Variable", link: "/workflow/table-or-variable" },
+            { text: "Parameters", link: "/workflow/parameters" },
+            { text: "Settings", link: "/workflow/settings" },
+            { text: "Debug Mode", link: "/workflow/debug-mode" },
+            { text: "Element Selector", link: "/workflow/element-selector" },
+            { text: "Expressions", link: "/workflow/expressions" },
+            { text: "Looping", link: "/workflow/looping" },
+            { text: "Testing mode", link: "/workflow/testing-mode" },
+          ],
+        },
+        {
+          text: "Workflow",
+          collapsed: false,
           items: [
             { text: "Overview", link: "/workflow/overview" },
             {
