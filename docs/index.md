@@ -24,4 +24,4 @@ Navigo hiện chỉ hỗ trợ Google Chrome và Firefox.Và để cài đặt n
 </div>
 
 ## Tutorials
-For the Navigo tutorials, you can go to the [Tutorials section](https://www.automa.site/tutorials).
+Đối với các hướng dẫn của Navigo, bạn có thể truy cập [Tutorials section](https://www.automa.site/tutorials).
