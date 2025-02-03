@@ -103,7 +103,7 @@ const config = defineConfig({
                   link: "/blocks/delay.md",
                 },
                 {
-                  text: "Nhóm",
+                  text: "Nhóm hiếu sửa",
                   link: "/blocks/blocks-group.md",
                 },
                 // {
