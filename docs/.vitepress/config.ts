@@ -14,9 +14,9 @@ declare global {
 }
 
 const config = defineConfig({
-  lang: "en-US",
-  title: "Tài Liệu",
-  description: "Documentation for Navigo Browser Extension",
+  lang: "vi-VN",
+  title: "Tài liệu",
+  description: "Tài liệu cho tiện ích mở rộng trình duyệt Navigo",
   head: [
     ["link", { rel: "icon", type: "image/x-icon", href: "/images/logo.png" }],
     // [
@@ -43,7 +43,7 @@ const config = defineConfig({
   themeConfig: {
     nav: [
       {
-        text: "Tài liệu cho người mới bắt đầu",
+        text: "Tìm hiểu thêm",
         link: "https://automa-docs-old.vercel.app/",
       },
       // { text: "Extension Builder", link: "/extension-builder/" },
