@@ -1,9 +1,9 @@
 ---
-title: Quick Start
+title: Bắt đầu nhanh chóng
 ---
 
-# Quick Start
-This section gives you a quick taste of Navigo by building your first workflow. In Navigo, there are two ways to create a workflow:
+# Bắt đầu nhanh chóng
+Phần này cung cấp cho bạn một hương vị nhanh chóng của Navigo bằng cách xây dựng quy trình làm việc đầu tiên của bạn.Trong Navigo, có hai cách để tạo ra một quy trình làm việc:
 1. By recording your actions on the web
 2. Manually
 

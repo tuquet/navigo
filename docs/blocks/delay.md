@@ -1,7 +1,7 @@
 ---
-title: Delay Block
+title: Khối độ trễ
 ---
 
-# Delay Block
+# Khối độ trễ
 
-Add a delay (in millisecond) before executing the next block.
+Thêm độ trễ (tính bằng mili giây) trước khi thực hiện khối tiếp theo.

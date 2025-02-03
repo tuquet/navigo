@@ -1,15 +1,15 @@
 ---
-title: Running a Workflow
+title: Chạy một quy trình làm việc
 ---
 
-# Running a Workflow
+# Chạy một quy trình làm việc
 
 ::: danger
-While the workflow is running, don't close the Navigo popup. Because it will not run when you close it.
+Trong khi quy trình làm việc đang chạy, đừng đóng cửa sổ bật lên của Navigo. Bởi vì nó sẽ không chạy khi bạn đóng nó.
 :::
 
-You can run a workflow by opening the Navigo dashboard and clicking the play icon (<v-remixicon name="riPlayLine" />) on the workflow you want to run.
+Bạn có thể chạy một quy trình công việc bằng cách mở bảng điều khiển Navigo và nhấp vào biểu tượng phát (<v-remixicon name="riPlayLine" />) Trên quy trình làm việc bạn muốn chạy.
 
-Or you can open Navigo Shortcut by pressing <kbd>Ctrl/⌘+Shift+E</kbd> on a page and select the workflow.
+Hoặc bạn có thể mở phím tắt của Navigo bằng cách nhấn <kbd>Ctrl/⌘+Shift+E</kbd> trên một trang và chọn quy trình làm việc.
 
-![Navigo shortcut](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/11cuil-6p.png)
+<!-- ![Navigo shortcut](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/11cuil-6p.png) -->

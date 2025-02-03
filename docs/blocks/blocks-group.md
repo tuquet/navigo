@@ -1,11 +1,11 @@
 ---
-title: Blocks Group
+title: Khối Nhóm
 ---
 
-# Blocks Group
+# Khối Nhóm
 
-Groups other blocks together inside one container, this way you can make the workflow look more organized.
+Các nhóm các khối khác với nhau bên trong một container, theo cách này bạn có thể làm cho quy trình công việc trông có tổ chức hơn.
 
-The blocks inside the Blocks Group are executed sequentially based on the order of the block from top to bottom.
+Các khối bên trong nhóm khối được thực hiện tuần tự dựa trên thứ tự của khối từ trên xuống dưới.
 
 ![Group](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17wso3-yt.png)

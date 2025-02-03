@@ -1,18 +1,18 @@
 ---
-title: Workflow
+title: Quy trình làm việc
 ---
 
-# Workflow
-Workflow is a collection of connected blocks to automate a process.
-When running the workflow, it will start executing from the trigger block and then to a block that connects to it afterward. The workflow execution ends when all the blocks are executed. And you can view the workflow executions in the workflow logs.
+# Quy trình làm việc
+Quy trình làm việc là một tập hợp các khối được kết nối để tự động hóa một quy trình.
+Khi chạy quy trình công việc, nó sẽ bắt đầu thực thi từ khối kích hoạt và sau đó đến một khối kết nối với nó sau đó.Việc thực hiện quy trình công việc kết thúc khi tất cả các khối được thực thi.Và bạn có thể xem các thực thi quy trình công việc trong nhật ký quy trình công việc.
 
-![running workflow](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/zf8ib-vt.gif)
+<!-- ![running workflow](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/03/zf8ib-vt.gif) -->
 
-## Export and import a workflow
-The workflow in Navigo is saved in JSON format. And you can export this JSON file and import it into Navigo. To export a workflow, click the ellipsis icon (<v-remixicon name="riMore2Line" size="18" />) and select the "Export" menu. 
+## Xuất và nhập quy trình làm việc
+Quy trình làm việc trong Navigo được lưu ở định dạng JSON.Và bạn có thể xuất tệp JSON này và nhập nó vào Navigo.Để xuất quy trình làm việc, nhấp vào biểu tượng Ellipsis (<v-remixicon name="riMore2Line" size="18" />) và chọn menu "Xuất". 
 
-![Export workflow](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/118p6d-3k.png)
+<!-- ![Export workflow](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/118p6d-3k.png) -->
 
-And to import the workflow, open the Navigo dashboard, click the arrow down icon, click the "Import workflow" menu, and select the JSON file.
+Và để nhập quy trình công việc, mở bảng điều khiển Navigo, nhấp vào biểu tượng mũi tên xuống, nhấp vào menu "Nhập quy trình công việc" và chọn tệp JSON.
 
-![Import workflow](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/118qey-nh.png)
+<!-- ![Import workflow](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/118qey-nh.png) -->
