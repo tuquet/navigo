@@ -1,15 +1,49 @@
-# Navigo Documentation
-📝 Documentation for the [automa](https://github.com/kholid060/automa) chrome extension.
+# Cài Chocolatey 
+https://chocolatey.org/install
 
-## Building the Documentation
-Install git if you don't already have it, and check out the documentation repo as follows,
+Mở PowerShell (Run as Administrator) và chạy lệnh sau:
 
 ```bash
-$ git clone https://github.com/AutomaApp/documentation.git
-$ cd documentation
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
-### Developing
+
+# Cài Git
+
 ```bash
-$ yarn install
-$ yarn dev # dev server at http://localhost:8080
+choco install git.install
+```
+
+# Cài VSCode
+
+```bash
+choco install vscode
+```
+
+## Cài các extension sau cho VSCode
+Ctrl+Shift+X để mở Extensions và cài các extension sau:
+
+Tìm kiếm theo từ khóa và install: 
+
+`funkyremi.vscode-google-translate`
+
+Notes: File > Open Folder... > chọn thư mục chứa dự án để mở dự án
+
+# Cài NodeJS
+
+```bash
+choco install nodejs.install
+```
+
+# Clone dự án về máy
+
+Mở Git Bash và chạy lệnh sau:
+```bash
+git clone https://gitlab.com/tech-fusions/doc-automation.git
+```
+
+
+## Developing
+```bash
+$ npm install
+$ npm run dev # dev server at http://localhost:8080
 ```
