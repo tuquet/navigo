@@ -139,7 +139,7 @@ If you think this project is helpful to you, you can help the author buy a cup o
 ## Contributor
 
 <a href="https://github.com/vbenjs/vue-vben-admin/graphs/contributors">
-  <img alt="Contributors"
+  <img alt="Người đóng góp"
         src="https://opencollective.com/vbenjs/contributors.svg?button=false" />
 </a>
 

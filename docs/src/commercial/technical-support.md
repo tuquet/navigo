@@ -1,8 +1,8 @@
-# 技术支持
+# Hỗ trợ kỹ thuật
 
-## 问题反馈
+## Câu hỏi Phản hồi
 
-在使用项目的过程中，如果遇到问题，你可以先详细阅读本文档，未找到解决方案时，可以通过以下方式获取技术支持：
+Khi sử dụng dự án, nếu bạn gặp phải vấn đề, bạn có thể đọc chi tiết tài liệu này.
 
-- 通过 [GitHub Issues](https://github.com/tuquet/app-release/releases/issues)
-- 通过 [GitHub Discussions](https://github.com/tuquet/app-release/releases/discussions)
+- Khám phá [Vấn Đề](https://github.com/tuquet/app-release/releases/issues)
+- Khám phá [Thảo Luận](https://github.com/tuquet/app-release/releases/discussions)

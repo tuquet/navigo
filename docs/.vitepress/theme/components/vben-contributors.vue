@@ -2,10 +2,10 @@
 
 <template>
   <div class="vp-doc vben-contributors">
-    <p>Contributors</p>
+    <p>Người đóng góp</p>
     <a href="https://github.com/tuquet/app-release/graphs/contributors">
       <img
-        alt="Contributors"
+        alt="Người đóng góp"
         src="https://opencollective.com/vbenjs/contributors.svg?button=false"
       />
     </a>

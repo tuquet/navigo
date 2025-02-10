@@ -232,33 +232,19 @@ function nav(): DefaultTheme.NavItem[] {
       ],
     },
     {
-      text: 'Bảng điều khiển',
-      items: [
-        {
-          text: 'TF Software',
-          items: [
-            {
-              link: 'https://www.vben.pro',
-              text: 'Phiên bản demo',
-            },
-          ],
-        },
-      ],
+      link: 'https://id.tfsoftware.vn',
+      text: 'Đăng nhập',
     },
     {
       text: version,
       items: [
         {
-          link: 'https://github.com/tuquet/app-release/releases/releases',
+          link: 'https://github.com/tuquet/app-release/releases',
           text: 'Cập nhật nhật ký',
         },
         {
           link: 'https://github.com/users/tuquet/projects/2',
           text: 'Lộ trình',
-        },
-        {
-          link: 'https://github.com/tuquet/app-release/releases/blob/main/.github/contributing.md',
-          text: 'đóng góp',
         },
       ],
     },
@@ -268,7 +254,7 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       link: '/sponsor/personal',
-      text: 'Nhà tài trợ',
+      text: 'Tài trợ',
     },
     {
       link: '/commercial/community',

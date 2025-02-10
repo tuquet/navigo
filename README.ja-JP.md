@@ -140,7 +140,7 @@ pnpm build
 ## 貢献者
 
 <a href="https://github.com/vbenjs/vue-vben-admin/graphs/contributors">
- <img alt="Contributors"
+ <img alt="Người đóng góp"
         src="https://opencollective.com/vbenjs/contributors.svg?button=false" />
 </a>
 
