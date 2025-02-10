@@ -4,12 +4,12 @@ layout: home
 sidebar: false
 
 hero:
-  name: Vben Admin
+  name: TF Software
   text: Enterprise-Level Management System Framework
   tagline: Fully Upgraded, Ready to Use, Simple and Efficient
   image:
     src: https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp
-    alt: Vben Admin
+    alt: TF Software
   actions:
     - theme: brand
       text: Get Started ->
@@ -19,7 +19,7 @@ hero:
       link: https://www.vben.pro
     - theme: alt
       text: View on GitHub
-      link: https://github.com/vbenjs/vue-vben-admin
+      link: https://github.com/tuquet/app-release/releases
 
 features:
   - icon: 🚀

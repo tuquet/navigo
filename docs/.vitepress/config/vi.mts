@@ -17,12 +17,12 @@ export const vi = defineConfig({
     },
     editLink: {
       pattern:
-        'https://github.com/vbenjs/vue-vben-admin/edit/main/docs/src/:path',
+        'https://github.com/tuquet/app-release/releases/edit/main/docs/src/:path',
       text: 'Chỉnh sửa trang này trên github',
     },
     footer: {
       copyright: `Copyright © 2020-${new Date().getFullYear()} Vben`,
-      message: 'Phát hành dựa trên giấy phép MIT.',
+      message: 'Một sản phẩm của TFSoftware.',
     },
     langMenuLabel: 'Đa ngôn ngữ',
     lastUpdated: {
@@ -36,7 +36,7 @@ export const vi = defineConfig({
     nav: nav(),
 
     outline: {
-      label: 'Trang điều hướng trang',
+      label: 'Trang điều hướng',
     },
     returnToTopLabel: 'Quay lại đầu',
 
@@ -45,7 +45,7 @@ export const vi = defineConfig({
       '/components/': { base: '/components/', items: sidebarComponents() },
       '/guide/': { base: '/guide/', items: sidebarGuide() },
     },
-    sidebarMenuLabel: '菜单',
+    sidebarMenuLabel: 'Menu',
   },
 });
 
@@ -56,8 +56,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       text: 'Giới thiệu',
       items: [
         {
-          link: 'introduction/vben',
-          text: 'Về Vben Admin',
+          link: 'introduction/about-us',
+          text: 'Về TFSoftware',
         },
         {
           link: 'introduction/why',
@@ -109,10 +109,10 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     {
       text: 'dự án',
       items: [
-        { link: 'project/standard', text: '规范' },
+        { link: 'project/standard', text: 'Đặc điểm kỹ thuật' },
         { link: 'project/cli', text: 'CLI' },
-        { link: 'project/dir', text: '目录说明' },
-        { link: 'project/test', text: '单元测试' },
+        { link: 'project/dir', text: 'Mục lục Mô tả' },
+        { link: 'project/test', text: 'Kiểm tra đơn vị' },
         { link: 'project/tailwindcss', text: 'Tailwind CSS' },
         { link: 'project/changeset', text: 'Changeset' },
         { link: 'project/vite', text: 'Vite Config' },
@@ -121,9 +121,9 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
     {
       text: 'khác',
       items: [
-        { link: 'other/project-update', text: '项目更新' },
-        { link: 'other/remove-code', text: '移除代码' },
-        { link: 'other/faq', text: '常见问题' },
+        { link: 'other/project-update', text: 'Cập nhật dự án' },
+        { link: 'other/remove-code', text: 'Xóa mã' },
+        { link: 'other/faq', text: 'Câu hỏi thường gặp' },
       ],
     },
   ];
@@ -212,7 +212,7 @@ function nav(): DefaultTheme.NavItem[] {
       items: [
         {
           activeMatch: '^/guide/',
-          link: '/guide/introduction/vben',
+          link: '/guide/introduction/about-us',
           text: 'Hướng dẫn',
         },
         {
@@ -232,35 +232,14 @@ function nav(): DefaultTheme.NavItem[] {
       ],
     },
     {
-      text: 'Thử nghiệm',
+      text: 'Bảng điều khiển',
       items: [
         {
-          text: 'Vben Admin',
+          text: 'TF Software',
           items: [
             {
               link: 'https://www.vben.pro',
               text: 'Phiên bản demo',
-            },
-            {
-              link: 'https://ant.vben.pro',
-              text: 'Ant Design Vue Phiên bản',
-            },
-            {
-              link: 'https://naive.vben.pro',
-              text: 'Naive Phiên bản',
-            },
-            {
-              link: 'https://ele.vben.pro',
-              text: 'Phiên bản Element Plus',
-            },
-          ],
-        },
-        {
-          text: '其他',
-          items: [
-            {
-              link: 'https://vben.vvbin.cn',
-              text: 'Vben Admin 2.x',
             },
           ],
         },
@@ -270,30 +249,30 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/releases',
+          link: 'https://github.com/tuquet/app-release/releases/releases',
           text: 'Cập nhật nhật ký',
         },
         {
-          link: 'https://github.com/orgs/vbenjs/projects/5',
+          link: 'https://github.com/users/tuquet/projects/2',
           text: 'Lộ trình',
         },
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/blob/main/.github/contributing.md',
+          link: 'https://github.com/tuquet/app-release/releases/blob/main/.github/contributing.md',
           text: 'đóng góp',
         },
       ],
     },
     {
       link: '/commercial/technical-support',
-      text: '🦄 Hỗ trợ kỹ thuật',
+      text: 'Hỗ trợ kỹ thuật',
     },
     {
       link: '/sponsor/personal',
-      text: '✨ nhà tài trợ',
+      text: 'Nhà tài trợ',
     },
     {
       link: '/commercial/community',
-      text: '👨‍👦‍👦 Nhóm truyền thông',
+      text: 'Nhóm truyền thông',
     },
   ];
 }

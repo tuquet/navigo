@@ -36,7 +36,7 @@ export const shared = defineConfig({
   srcDir: 'src',
   themeConfig: {
     i18nRouting: true,
-    logo: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp',
+    logo: 'https://unpkg.com/@tfsoft/static-source@1.0.1/static/logo-white.png',
     search: {
       options: {
         locales: {
@@ -46,12 +46,15 @@ export const shared = defineConfig({
       },
       provider: 'local',
     },
-    siteTitle: 'Vben Admin',
+    siteTitle: 'TF Software',
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vbenjs/vue-vben-admin' },
+      {
+        icon: 'github',
+        link: 'https://github.com/tuquet/app-release/releases',
+      },
     ],
   },
-  title: 'Vben Admin',
+  title: 'TF Software',
   vite: {
     build: {
       chunkSizeWarningLimit: Infinity,
@@ -91,7 +94,7 @@ export const shared = defineConfig({
             username: 'likui628',
           },
         ],
-        repoURL: () => 'https://github.com/vbenjs/vue-vben-admin',
+        repoURL: () => 'https://github.com/tuquet/app-release',
       }),
       // @ts-ignore - vitepress-plugin-git-changelog
       GitChangelogMarkdownSection(),
@@ -135,7 +138,7 @@ function head(): HeadConfig[] {
         name: 'viewport',
       },
     ],
-    ['meta', { content: 'vben admin docs', name: 'keywords' }],
+    ['meta', { content: 'navigo docs', name: 'keywords' }],
     ['link', { href: '/favicon.ico', rel: 'icon' }],
     // [
     //   'script',
@@ -150,23 +153,22 @@ function pwa(): PwaOptions {
   return {
     includeManifestIcons: false,
     manifest: {
-      description:
-        'Vben Admin is a modern admin dashboard template based on Vue 3. ',
+      description: 'TFSoftware',
       icons: [
         {
           sizes: '192x192',
-          src: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/pwa-icon-192.png',
+          src: 'https://unpkg.com/@tfsoft/static-source@1.0.1/static/256w/logo-square.png',
           type: 'image/png',
         },
         {
           sizes: '512x512',
-          src: 'https://unpkg.com/@vbenjs/static-source@0.1.7/source/pwa-icon-512.png',
+          src: 'https://unpkg.com/@tfsoft/static-source@1.0.1/static/512w/logo-square.png',
           type: 'image/png',
         },
       ],
       id: '/',
-      name: 'Vben Admin Doc',
-      short_name: 'vben_admin_doc',
+      name: 'TFSoftware',
+      short_name: 'tfsoftware',
       theme_color: '#ffffff',
     },
     outDir: resolve(process.cwd(), '.vitepress/dist'),

@@ -5,7 +5,7 @@ import { defineConfig } from 'vitepress';
 import { version } from '../../../package.json';
 
 export const en = defineConfig({
-  description: 'Vben Admin & Enterprise level management system framework',
+  description: 'TF Software & Enterprise level management system framework',
   lang: 'en-US',
   themeConfig: {
     darkModeSwitchLabel: 'Theme',
@@ -16,12 +16,12 @@ export const en = defineConfig({
     },
     editLink: {
       pattern:
-        'https://github.com/vbenjs/vue-vben-admin/edit/main/docs/src/:path',
+        'https://github.com/tuquet/app-release/releases/edit/main/docs/src/:path',
       text: 'Edit this page on GitHub',
     },
     footer: {
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Vben`,
-      message: 'Released under the MIT License.',
+      copyright: `Copyright © 2020-${new Date().getFullYear()} TFSoftware`,
+      message: 'A product of TFSoftware.',
     },
     langMenuLabel: 'Language',
     lastUpdated: {
@@ -55,7 +55,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         {
           link: 'introduction/vben',
-          text: 'About Vben Admin',
+          text: 'About TF Software',
         },
         {
           link: 'introduction/why',
@@ -163,7 +163,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: 'Demo',
       items: [
         {
-          text: 'Vben Admin',
+          text: 'TF Software',
           items: [
             {
               link: 'https://www.vben.pro',
@@ -188,7 +188,7 @@ function nav(): DefaultTheme.NavItem[] {
           items: [
             {
               link: 'https://vben.vvbin.cn',
-              text: 'Vben Admin 2.x',
+              text: 'TF Software 2.x',
             },
           ],
         },
@@ -198,7 +198,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/releases',
+          link: 'https://github.com/tuquet/app-release/releases/releases',
           text: 'Changelog',
         },
         {
@@ -206,7 +206,7 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Roadmap',
         },
         {
-          link: 'https://github.com/vbenjs/vue-vben-admin/blob/main/.github/contributing.md',
+          link: 'https://github.com/tuquet/app-release/releases/blob/main/.github/contributing.md',
           text: 'Contribution',
         },
       ],

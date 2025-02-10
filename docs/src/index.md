@@ -4,73 +4,50 @@ layout: home
 sidebar: false
 
 hero:
-  name: Vben Admin
-  text: Enterprise-Level Management System Framework
-  tagline: Fully Upgraded, Ready to Use, Simple and Efficient
+  name: NAVIGO
+  text: Phần Mềm Marketing
+  tagline: Mạnh mẽ, đơn giản, hiệu quả và miễn phí
   image:
-    src: https://unpkg.com/@vbenjs/static-source@0.1.7/source/logo-v1.webp
-    alt: Vben Admin
+    src: https://unpkg.com/@tfsoft/static-source@1.0.1/static/512w/logo-white.png
+    width: 240
+    alt: NAVIGO
   actions:
     - theme: brand
-      text: Get Started ->
-      link: /guide/introduction/vben
+      text: Bắt đầu ->
+      link: /guide/introduction/navigo
     - theme: alt
-      text: Live Preview
-      link: https://www.vben.pro
-    - theme: alt
-      text: View on GitHub
-      link: https://github.com/vbenjs/vue-vben-admin
+      text: Tải về
+      link: https://github.com/tuquet/app-release/releases/download/v1.0.9/navigo-1.0.9-setup.exe
 
 features:
-  - icon: 🚀
-    title: Latest Technology Stack
-    details: Based on the latest technology stack, including Vue3, Pinia, Vue Router, TypeScript, etc.
-    link: /guide/introduction/quick-start
-    linkText: Get Started
-  - icon: 🦄
-    title: Rich Configurations
-    details: An enterprise-level frontend solution for middle and back-end systems, offering a wealth of components, templates, and various preference settings.
-    link: /guide/essentials/settings
-    linkText: Configuration Documentation
-  - icon: 🎨
-    title: Theme Customization
-    details: Easily switch between various themes through simple configurations, catering to personalized needs.
-    link: /guide/in-depth/theme
-    linkText: Theme Documentation
-  - icon: 🌐
-    title: Internationalization
-    details: Built-in internationalization support with multiple languages to meet global needs.
-    link: /guide/in-depth/locale
-    linkText: Internationalization Documentation
-  - icon: 🔐
-    title: Access Control
-    details: Built-in access control solutions supporting various permission management methods to meet different access requirements.
+  - icon: 🛠️
+    title: Điều khiển trình duyệt
+    details: Sử dụng thao tác kéo thả đơn giản mà không cần biết code.
     link: /guide/in-depth/access
-    linkText: Access Documentation
-  - title: Vite
-    icon:
-      src: /logos/vite.svg
-    details: Modern frontend build tool with fast cold start and instant hot updates.
-    link: https://vitejs.dev/
-    linkText: Official Site
-  - title: Shadcn UI
-    icon:
-      src: /logos/shadcn-ui.svg
-    details: Core built on Shadcn UI + Tailwindcss, with business support for any UI framework.
-    link: https://www.shadcn-vue.com/
-    linkText: Official Site
-  - title: Turbo Repo
-    icon:
-      src: /logos/turborepo.svg
-    details: Standardized monorepo architecture using pnpm + monorepo + turbo for enterprise-level development standards.
-    link: https://turbo.build/
-    linkText: Official Site
-  - title: Nitro Mock Server
-    icon:
-      src: /logos/nitro.svg
-    details: Built-in Nitro Mock service makes your mock service more powerful.
-    link: https://nitro.unjs.io/
-    linkText: Official Site
+    linkText: Tìm hiểu thêm
+  - icon: 🛠️
+    title: Điều khiển thiết bị di động
+    details: Sử dụng thao tác kéo thả đơn giản mà không cần biết code.
+    link: /guide/in-depth/access
+    linkText: Tìm hiểu thêm
+  - icon: 🛠️
+    title: Tài liệu & Hướng dẫn
+    details: Đầy đủ hướng dẫn từ cài đặt đến sử dụng hỗ trợ người dùng.
+    link: /guide/in-depth/access
+    linkText: Tìm hiểu thêm
+  - icon: 🛠️
+    title: Công nghệ ẩn danh
+    details: Chống truy vết thông minh giúp tài khoản an toàn.
+    link: /guide/in-depth/access
+    linkText: Tìm hiểu thêm
+  - icon: 🛠️
+    title: Bảo vệ tài khoản
+    details: Hạn chế tối đa tình trạng bị chặn, khóa, giới hạn tài khoản.
+    link: /guide/in-depth/access
+    linkText: Tìm hiểu thêm
+  - icon: 🛠️
+    title: Tích hợp nhiều công cụ
+    details: Thay thế nhiều công cụ chỉ với một phần mềm duy nhất.
+    link: /guide/in-depth/access
+    linkText: Tìm hiểu thêm
 ---
-
-<VbenContributors />
