@@ -19,7 +19,7 @@ hero:
       link: https://www.vben.pro
     - theme: alt
       text: View on GitHub
-      link: https://github.com/tuquet/app-release/releases
+      link: https://github.com/tuquet/navigo/releases
 
 features:
   - icon: 🚀

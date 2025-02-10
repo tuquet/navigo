@@ -3,7 +3,7 @@
 <template>
   <div class="vp-doc vben-contributors">
     <p>Người đóng góp</p>
-    <a href="https://github.com/tuquet/app-release/graphs/contributors">
+    <a href="https://github.com/tuquet/navigo/graphs/contributors">
       <img
         alt="Người đóng góp"
         src="https://opencollective.com/vbenjs/contributors.svg?button=false"

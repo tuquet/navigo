@@ -32,7 +32,7 @@ git -v
 
 ```bash [GitHub]
 # Clone the code
-git clone https://github.com/tuquet/app-release/releases.git
+git clone https://github.com/tuquet/navigo/releases.git
 ```
 
 ```bash [Gitee]

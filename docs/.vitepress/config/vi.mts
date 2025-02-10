@@ -15,11 +15,10 @@ export const vi = defineConfig({
       next: 'Trang tiếp theo',
       prev: 'Trang trước',
     },
-    // editLink: {
-    //   pattern:
-    //     'https://github.com/tuquet/app-release/releases/edit/main/docs/src/:path',
-    //   text: 'Chỉnh sửa trang này trên github',
-    // },
+    editLink: {
+      pattern: 'https://github.com/tuquet/navigo/edit/main/docs/src/:path',
+      text: 'Chỉnh sửa trang này',
+    },
     footer: {
       copyright: `Copyright © 2020-${new Date().getFullYear()} Navigo.`,
       message: 'Một sản phẩm của TFSoftware.',
@@ -57,7 +56,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         {
           link: 'introduction/about-us',
-          text: 'Về TFSoftware',
+          text: 'Về TF Software',
         },
         {
           link: 'introduction/why',
@@ -210,7 +209,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/tuquet/app-release/releases',
+          link: 'https://github.com/tuquet/navigo/releases',
           text: 'Nhật ký phát hành',
         },
         {

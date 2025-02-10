@@ -1,15 +1,14 @@
-# About TF Software
+# Giới thiệu về TF Software
 
-::: info You are reading the documentation for [TF Software](https://github.com/tuquet/app-release/releases) version `5.0`!
+Ra đời vào năm 2024, TF Software là một tập hợp những con người đam mê lập trình và tự động hóa. Tên gọi TF (viết tắt của Tech Fusion) không chỉ đơn thuần là một cái tên, mà còn là triết lý hoạt động của đội ngũ: sự kết hợp hoàn hảo giữa công nghệ hiện đại và các lĩnh vực đa dạng khác.
 
-- TF Software 2.x is currently archived and only receives critical fixes.
-- The new version is not compatible with the old version. If you are using the old version (v2, v3), please refer to the [Vue TF Software 2.x Documentation](https://doc.vvbin.cn).
-- If you find any errors in the documentation, feel free to submit an issue to help us improve.
-- If you just want to experience it, you can check out the [Quick Start](./quick-start.md).
+Với định hướng trở thành đối tác tin cậy trong lĩnh vực MMO (Make Money Online) và Marketing, TF Software mang đến những giải pháp phần mềm tối ưu, từ phát triển phần mềm theo yêu cầu đến những sản phẩm miễn phí chất lượng cao. Chúng tôi không ngừng nỗ lực để đưa trí tuệ nhân tạo (AI) vào quy trình tự động hóa, giúp công việc của bạn trở nên thông minh và hiệu quả hơn bao giờ hết.
 
-:::
+Đặc biệt, TF Software tự hào giới thiệu tính năng kéo thả trực quan, một bước tiến lớn giúp người dùng không cần kiến thức lập trình vẫn có thể dễ dàng tạo ra những giải pháp tự động hóa phù hợp với nhu cầu cá nhân.
 
-[TF Software](https://github.com/tuquet/app-release/releases) is a backend solution based on [Vue 3.0](https://github.com/vuejs/core), [Vite](https://github.com/vitejs/vite), and [TypeScript](https://www.typescriptlang.org/), aimed at providing an out-of-the-box solution for developing medium to large-scale projects. It includes features like component re-encapsulation, utilities, hooks, dynamic menus, permission validation, multi-theme configurations, and button-level permission control. The project uses the latest frontend technology stack, making it a good starting template for quickly building enterprise-level mid- to backend product prototypes. It can also serve as an example for learning `vue3`, `vite`, `ts`, and other mainstream technologies. The project will continue to follow the latest technologies and apply them within the project.
+Bên cạnh đó, chúng tôi luôn đặt bảo mật thông tin lên hàng đầu. Mọi dữ liệu của người dùng đều được bảo vệ bởi các chế độ bảo mật tiên tiến, đảm bảo an toàn tuyệt đối.
+
+TF Software - Nơi công nghệ gặp gỡ sự sáng tạo, mang đến những giải pháp tự động hóa thông minh, dễ dàng và an toàn cho mọi người dùng. Hãy cùng chúng tôi kiến tạo tương lai!
 
 ## Features
 
@@ -36,7 +35,7 @@
 
 ## Contribution
 
-- [TF Software](https://github.com/tuquet/app-release/releases) is still being actively updated. Contributions are welcome to help maintain and improve the project, aiming to create a better mid- to backend solution.
+- [TF Software](https://github.com/tuquet/navigo/releases) is still being actively updated. Contributions are welcome to help maintain and improve the project, aiming to create a better mid- to backend solution.
 - If you wish to join us, you can start by contributing in the following ways, and we will invite you to join based on your activity.
 
 ::: info Join Us

@@ -14,10 +14,10 @@ hero:
   actions:
     - theme: brand
       text: Bắt đầu ->
-      link: /guide/introduction/navigo
+      link: /guide/introduction/about-us
     - theme: alt
       text: Tải về
-      link: https://github.com/tuquet/app-release/releases/download/v1.0.9/navigo-1.0.9-setup.exe
+      link: https://github.com/tuquet/navigo/releases/latest
 
 features:
   - icon: 🛠️

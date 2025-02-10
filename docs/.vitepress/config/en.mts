@@ -15,8 +15,7 @@ export const en = defineConfig({
       prev: 'Previous Page',
     },
     editLink: {
-      pattern:
-        'https://github.com/tuquet/app-release/releases/edit/main/docs/src/:path',
+      pattern: 'https://github.com/tuquet/navigo/edit/main/docs/src/:path',
       text: 'Edit this page on GitHub',
     },
     footer: {
@@ -198,7 +197,7 @@ function nav(): DefaultTheme.NavItem[] {
       text: version,
       items: [
         {
-          link: 'https://github.com/tuquet/app-release/releases/releases',
+          link: 'https://github.com/tuquet/navigo/releases/releases',
           text: 'Changelog',
         },
         {
@@ -206,7 +205,7 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Roadmap',
         },
         {
-          link: 'https://github.com/tuquet/app-release/releases/blob/main/.github/contributing.md',
+          link: 'https://github.com/tuquet/navigo/releases/blob/main/.github/contributing.md',
           text: 'Contribution',
         },
       ],

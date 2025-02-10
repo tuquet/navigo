@@ -50,7 +50,7 @@ export const shared = defineConfig({
     socialLinks: [
       {
         icon: 'github',
-        link: 'https://github.com/tuquet/app-release/releases',
+        link: 'https://github.com/tuquet/navigo/releases',
       },
     ],
   },
@@ -94,7 +94,7 @@ export const shared = defineConfig({
             username: 'likui628',
           },
         ],
-        repoURL: () => 'https://github.com/tuquet/app-release',
+        repoURL: () => 'https://github.com/tuquet/navigo',
       }),
       // @ts-ignore - vitepress-plugin-git-changelog
       GitChangelogMarkdownSection(),
