@@ -6,22 +6,22 @@ import { version } from '../../../package.json';
 
 export const vi = defineConfig({
   description:
-    'Khung hệ thống quản lý doanh nghiệp & quản trị doanh nghiệp VBEN',
+    'Phần mềm Marketing của TFSoftware, giúp bạn quản lý và lập kế hoạch dự án một cách hiệu quả.',
   lang: 'vi-VN',
   themeConfig: {
     darkModeSwitchLabel: 'Chủ đề',
-    darkModeSwitchTitle: 'Chuyển sang chế độ tối',
+    darkModeSwitchTitle: 'Chế độ tối',
     docFooter: {
       next: 'Trang tiếp theo',
       prev: 'Trang trước',
     },
-    editLink: {
-      pattern:
-        'https://github.com/tuquet/app-release/releases/edit/main/docs/src/:path',
-      text: 'Chỉnh sửa trang này trên github',
-    },
+    // editLink: {
+    //   pattern:
+    //     'https://github.com/tuquet/app-release/releases/edit/main/docs/src/:path',
+    //   text: 'Chỉnh sửa trang này trên github',
+    // },
     footer: {
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Vben`,
+      copyright: `Copyright © 2020-${new Date().getFullYear()} Navigo.`,
       message: 'Một sản phẩm của TFSoftware.',
     },
     langMenuLabel: 'Đa ngôn ngữ',
@@ -32,7 +32,7 @@ export const vi = defineConfig({
       },
       text: 'Cập nhật lần cuối',
     },
-    lightModeSwitchTitle: 'Chuyển sang chế độ ánh sáng',
+    lightModeSwitchTitle: 'Chế  độ sáng',
     nav: nav(),
 
     outline: {
@@ -107,7 +107,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       ],
     },
     {
-      text: 'dự án',
+      text: 'Dự án',
       items: [
         { link: 'project/standard', text: 'Đặc điểm kỹ thuật' },
         { link: 'project/cli', text: 'CLI' },
@@ -119,7 +119,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       ],
     },
     {
-      text: 'khác',
+      text: 'Khác',
       items: [
         { link: 'other/project-update', text: 'Cập nhật dự án' },
         { link: 'other/remove-code', text: 'Xóa mã' },
@@ -133,7 +133,7 @@ function sidebarCommercial(): DefaultTheme.SidebarItem[] {
   return [
     {
       link: 'community',
-      text: 'Nhóm truyền thông',
+      text: 'Cộng đồng',
     },
     {
       link: 'technical-support',
@@ -207,6 +207,19 @@ function sidebarComponents(): DefaultTheme.SidebarItem[] {
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
+      text: version,
+      items: [
+        {
+          link: 'https://github.com/tuquet/app-release/releases',
+          text: 'Nhật ký phát hành',
+        },
+        {
+          link: 'https://github.com/users/tuquet/projects/2',
+          text: 'Lộ trình phát triển',
+        },
+      ],
+    },
+    {
       activeMatch: '^/(guide|components)/',
       text: 'Tài liệu',
       items: [
@@ -220,32 +233,6 @@ function nav(): DefaultTheme.NavItem[] {
           link: '/components/introduction',
           text: 'Các thành phần',
         },
-        {
-          text: 'Phiên bản lịch sử',
-          items: [
-            {
-              link: 'https://doc.vvbin.cn',
-              text: '2.x Tài liệu phiên bản',
-            },
-          ],
-        },
-      ],
-    },
-    {
-      link: 'https://id.tfsoftware.vn',
-      text: 'Đăng nhập',
-    },
-    {
-      text: version,
-      items: [
-        {
-          link: 'https://github.com/tuquet/app-release/releases',
-          text: 'Cập nhật nhật ký',
-        },
-        {
-          link: 'https://github.com/users/tuquet/projects/2',
-          text: 'Lộ trình',
-        },
       ],
     },
     {
@@ -258,7 +245,11 @@ function nav(): DefaultTheme.NavItem[] {
     },
     {
       link: '/commercial/community',
-      text: 'Nhóm truyền thông',
+      text: 'Cộng đồng',
+    },
+    {
+      link: 'https://id.tfsoftware.vn',
+      text: 'Đăng nhập',
     },
   ];
 }

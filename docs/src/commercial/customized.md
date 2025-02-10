@@ -1,12 +1,10 @@
-# 定制开发
+# Phát triển tùy chỉnh
 
-我们提供基于 TF Software 的技术支持服务及定制开发，基本需求我们都可以满足。
+Chúng tôi cung cấp các dịch vụ hỗ trợ kỹ thuật và phát triển tùy chỉnh dựa trên phần mềm và chúng tôi có thể đáp ứng các nhu cầu cơ bản.
 
-详细需求可添加作者了解，并注明来意：
+Đối với các yêu cầu chi tiết, bạn có thể thêm tác giả để hiểu và chỉ ra mục đích:
 
-- 通过邮箱联系开发者： [ann.vben@gmail.com](mailto:ann.vben@gmail.com)
-- 通过微信联系开发者：
+- Liên hệ với nhà phát triển qua email: [tfsoftware.vn@gmail.com](mailto:tfsoftware.vn@gmail.com)
+- Liên hệ với nhà phát triển qua Facebook: [Tú Quét](https://www.facebook.com/quet.jr)
 
- <img src="https://unpkg.com/@vbenjs/static-source@0.1.7/source/wechat.jpg" style="width: 300px;"/>
-
-我们会在第一时间回复您，定制费用根据需求而定。
+Chúng tôi sẽ trả lời bạn càng sớm càng tốt và phí tùy chỉnh phụ thuộc vào nhu cầu của bạn.
