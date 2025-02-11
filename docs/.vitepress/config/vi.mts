@@ -41,7 +41,7 @@ export const vi = defineConfig({
 
     sidebar: {
       '/commercial/': { base: '/commercial/', items: sidebarCommercial() },
-      '/components/': { base: '/components/', items: sidebarComponents() },
+      '/workflow/': { base: '/workflow/', items: workflowMenu() },
       '/guide/': { base: '/guide/', items: sidebarGuide() },
     },
     sidebarMenuLabel: 'Menu',
@@ -66,8 +66,8 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         { link: 'introduction/thin', text: 'Phiên bản Lite' },
         {
           base: '/',
-          link: 'components/introduction',
-          text: 'Tài liệu thành phần',
+          link: 'workflow/introduction',
+          text: 'Tài liệu quy trình',
         },
       ],
     },
@@ -145,10 +145,10 @@ function sidebarCommercial(): DefaultTheme.SidebarItem[] {
   ];
 }
 
-function sidebarComponents(): DefaultTheme.SidebarItem[] {
+function workflowMenu(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: 'Các thành phần',
+      text: 'Tự động hóa trình duyệt',
       items: [
         {
           link: 'introduction',
@@ -228,9 +228,9 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Hướng dẫn',
         },
         {
-          activeMatch: '^/components/',
-          link: '/components/introduction',
-          text: 'Các thành phần',
+          activeMatch: '^/workflow/',
+          link: '/workflow/introduction',
+          text: 'Tài liệu quy trình',
         },
       ],
     },
