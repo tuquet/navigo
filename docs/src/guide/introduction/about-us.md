@@ -10,39 +10,39 @@ Bên cạnh đó, chúng tôi luôn đặt bảo mật thông tin lên hàng đ�
 
 TF Software - Nơi công nghệ gặp gỡ sự sáng tạo, mang đến những giải pháp tự động hóa thông minh, dễ dàng và an toàn cho mọi người dùng. Hãy cùng chúng tôi kiến tạo tương lai!
 
-## Features
+## Tính năng
 
-- **Latest Technology Stack**: Developed using cutting-edge frontend technologies like `Vue 3`, `Vite`, and `TypeScript`.
-- **Internationalization**: Built-in comprehensive internationalization solutions with multi-language support.
-- **Permission Validation**: Comprehensive permission validation solutions, including button-level permission control.
-- **Multi-Theme**: Built-in multiple theme configurations & dark mode to meet personalized needs.
-- **Dynamic Menu**: Supports dynamic menus that can display based on permissions.
-- **Mock Data**: High-performance local Mock data solution based on `Nitro`.
-- **Rich Components**: Provides a wide range of components to meet most business needs.
-- **Standardization**: Code quality is ensured with tools like `ESLint`, `Prettier`, `Stylelint`, `Publint`, and `CSpell`.
-- **Engineering**: Development efficiency is improved with tools like `Pnpm Monorepo`, `TurboRepo`, and `Changeset`.
-- **Multi-UI Library Support**: Supports mainstream UI libraries like `Ant Design Vue`, `Element Plus`, and `Vuetify`, without being restricted to a specific framework.
+- **Công nghệ tiên tiến nhất**: Phát triển bằng các công nghệ frontend hiện đại như Vue 3, Vite, và TypeScript.
+- **Quốc tế hóa**: Hỗ trợ đa ngôn ngữ với giải pháp quốc tế hóa toàn diện.
+- **Kiểm soát quyền truy cập**: Giải pháp kiểm soát quyền truy cập toàn diện, bao gồm kiểm soát quyền ở cấp độ nút bấm.
+- **Đa giao diện**: Hỗ trợ nhiều cấu hình giao diện và chế độ tối để đáp ứng nhu cầu cá nhân hóa.
+- **Menu động**: Hỗ trợ menu động có thể hiển thị dựa trên quyền truy cập.
+- **Dữ liệu Mock**: Giải pháp dữ liệu Mock hiệu suất cao dựa trên `Nitro`.
+- **Thư viện component phong phú**: Cung cấp nhiều component để đáp ứng hầu hết các nhu cầu kinh doanh.
+- **Tiêu chuẩn hóa**: Chất lượng code được đảm bảo bằng các công cụ như `ESLint`, `Prettier`, `Stylelint`, `Publint`, and `CSpell`.
+- **Công cụ phát triển**: Hiệu suất phát triển được cải thiện với các công cụ như `Pnpm Monorepo`, `TurboRepo`, and `Changeset`.
+- **Hỗ trợ đa thư viện UI**: Hỗ trợ các thư viện UI phổ biến như `Ant Design Vue`, `Element Plus`, and `Vuetify`, không bị giới hạn bởi một framework cụ thể.
 
-## Browser Support
+## Hỗ trợ trình duyệt
 
-- **Local development** is recommended using the **latest version of Chrome**. **Versions below Chrome 80 are not supported**.
+- **Phát triển** Khuyến nghị sử dụng **phiên bản Chrome mới nhất**.
 
-- **Production environment** supports modern browsers, IE is not supported.
+- **Môi trường Product** Hỗ trợ các trình duyệt hiện đại, không hỗ trợ IE.
 
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png" alt="IE" width="24px" height="24px"  />](http://godban.github.io/browsers-support-badges/)IE | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)Safari |
 | :-: | :-: | :-: | :-: | :-: |
-| not support | last 2 versions | last 2 versions | last 2 versions | last 2 versions |
+| không hỗ trợ | 2 phiên bản gần nhất | 2 phiên bản gần nhất | 2 phiên bản gần nhất | 2 phiên bản gần nhất |
 
-## Contribution
+## Đóng góp
 
-- [TF Software](https://github.com/tuquet/navigo/releases) is still being actively updated. Contributions are welcome to help maintain and improve the project, aiming to create a better mid- to backend solution.
-- If you wish to join us, you can start by contributing in the following ways, and we will invite you to join based on your activity.
+- [TF Software](https://github.com/tuquet/navigo/releases) vẫn đang được cập nhật tích cực. Chúng tôi hoan nghênh mọi đóng góp để duy trì và cải thiện dự án, hướng tới tạo ra một giải pháp mid- to backend tốt hơn.
+- Nếu bạn muốn tham gia cùng chúng tôi, bạn có thể bắt đầu bằng cách đóng góp theo các cách sau, và chúng tôi sẽ mời bạn tham gia dựa trên mức độ hoạt động của bạn.
 
-::: info Join Us
+::: Thông tin đóng góp
 
-- Regularly submit `PRs`.
-- Provide valuable suggestions.
-- Participate in discussions and help resolve some `issues`.
-- Help maintain the documentation.
+- Thường xuyên gửi đóng góp tới `PRs`.
+- Cung cấp các thông tin giá trị.
+- Tham gia giải quyết `các vấn đề`.
+- Duy trì và cập nhật tài liệu.
 
 :::
