@@ -12,7 +12,7 @@ TF Software - Nơi công nghệ gặp gỡ sự sáng tạo, mang đến những
 
 ## Tính năng
 
-- **Công nghệ tiên tiến nhất**: Phát triển bằng các công nghệ frontend hiện đại như Vue 3, Vite, và TypeScript.
+- **Công nghệ tiên tiến nhất**: Sử dụng công nghệ mới nhất.
 - **Quốc tế hóa**: Hỗ trợ đa ngôn ngữ với giải pháp quốc tế hóa toàn diện.
 - **Kiểm soát quyền truy cập**: Giải pháp kiểm soát quyền truy cập toàn diện, bao gồm kiểm soát quyền ở cấp độ nút bấm.
 - **Đa giao diện**: Hỗ trợ nhiều cấu hình giao diện và chế độ tối để đáp ứng nhu cầu cá nhân hóa.
