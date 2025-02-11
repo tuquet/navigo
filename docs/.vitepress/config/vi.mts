@@ -41,8 +41,8 @@ export const vi = defineConfig({
 
     sidebar: {
       '/commercial/': { base: '/commercial/', items: sidebarCommercial() },
-      '/workflow/': { base: '/workflow/', items: workflowMenu() },
       '/guide/': { base: '/guide/', items: sidebarGuide() },
+      '/workflow/': { base: '/workflow/', items: sidebarWorkflow() },
     },
     sidebarMenuLabel: 'Menu',
   },
@@ -145,7 +145,7 @@ function sidebarCommercial(): DefaultTheme.SidebarItem[] {
   ];
 }
 
-function workflowMenu(): DefaultTheme.SidebarItem[] {
+function sidebarWorkflow(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: 'Tự động hóa trình duyệt',

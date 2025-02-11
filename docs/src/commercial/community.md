@@ -9,7 +9,7 @@ Tác giả chủ yếu cung cấp trợ giúp thông qua các nhóm Telegram. Li
 Bởi vì có những hạn chế về số lượng người trong nhóm Telegram, các yêu cầu để thêm nhóm Telegram:
 
 - Bất kỳ số tiền nào được thông qua [Tài trợ](../sponsor/personal.md).
-- Gửi ảnh chụp màn hình tài trợ và tin nhắnb 2 c n , 'Tham gia nhóm Telegram`.
+- Gửi ảnh chụp màn hình tài trợ và tin nhắn "Tham gia nhóm Telegram".
 
 :::
 
