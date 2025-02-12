@@ -8,6 +8,7 @@ import { vi } from './vi.mts';
 export default withPwa(
   defineConfigWithTheme({
     ...shared,
+    lastUpdated: true,
     locales: {
       // en: {
       //   label: 'English',

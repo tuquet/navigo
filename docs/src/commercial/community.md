@@ -1,16 +1,14 @@
-# Cộng đồng
+# Hỗ trợ
 
-## Telegram
+Nhóm trao đổi cộng đồng chủ yếu là để tạo điều kiện cho mọi người giao tiếp, đặt câu hỏi, trả lời câu hỏi, chia sẻ kinh nghiệm, v.v. Đây là một phương pháp tự phục vụ.
 
-Tác giả chủ yếu cung cấp trợ giúp thông qua các nhóm Telegram. Liên hệ với tác giả qua Telegram và cho biết mục đích tham gia nhóm:
+## Nhóm Telegram
 
-::: tip
+Tác giả chủ yếu cung cấp trợ giúp thông qua các nhóm Telegram.
 
-Bởi vì có những hạn chế về số lượng người trong nhóm Telegram, các yêu cầu để thêm nhóm Telegram:
+- [Telegram - Official Channel](https://t.me/tfsoftware) - Chia sẻ thông tin, hướng dẫn, hỗ trợ người dùng.
+- [Telegram - Official Group](https://t.me/+Oudw20am5cZiOGI1) - Trao đổi, thảo luận, hỗ trợ người dùng.
 
-- Bất kỳ số tiền nào được thông qua [Tài trợ](../sponsor/personal.md).
-- Gửi ảnh chụp màn hình tài trợ và tin nhắn "Tham gia nhóm Telegram".
+## Nhóm Facebook
 
-:::
-
-<img src="/guide/qr-telegram-channel.jpg" style="width: 200px; border-radius: 20px;"/>
+- [Facebook - Official Group](https://www.facebook.com/groups/1736733590245766) - Trao đổi, thảo luận, hỗ trợ người dùng.

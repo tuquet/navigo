@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: Bắt đầu ->
-      link: /guide/introduction/about-us
+      link: /guide/introduction/setup
     - theme: alt
       text: Tải về
       link: https://github.com/tuquet/navigo/releases/latest
