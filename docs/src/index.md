@@ -38,22 +38,23 @@ features:
     details: Sử dụng thao tác kéo thả đơn giản mà không cần biết code.
     link: /guide/in-depth/access
     linkText: Tìm hiểu thêm
-  - icon:
-      src: https://cdn-icons-png.flaticon.com/128/1041/1041877.png
-    title: Bảo vệ tài khoản
-    details: Hạn chế tối đa tình trạng bị chặn, khóa, giới hạn tài khoản với quy trình chuyên biệt.
-    link: /guide/in-depth/access
-    linkText: Tìm hiểu thêm
+
   - icon:
       src: https://cdn-icons-png.flaticon.com/128/4176/4176777.png
     title: Thư viện mở rộng
-    details: Cộng đồng phát triển quy trình miễn tự động phí.
+    details: Khám phá thư viện quy trình tương tác miễn phí từ cộng đồng.
     link: /guide/in-depth/access
     linkText: Tìm hiểu thêm
   - icon:
       src: https://cdn-icons-png.flaticon.com/128/3379/3379623.png
     title: Tài liệu & Hướng dẫn
     details: Đầy đủ hướng dẫn từ cài đặt đến sử dụng hỗ trợ người dùng.
+    link: /guide/in-depth/access
+    linkText: Tìm hiểu thêm
+  - icon:
+      src: https://cdn-icons-png.flaticon.com/128/1041/1041877.png
+    title: Bảo vệ tài khoản
+    details: Hạn chế tối đa tình trạng bị chặn, khóa, giới hạn tài khoản với quy trình chuyên biệt.
     link: /guide/in-depth/access
     linkText: Tìm hiểu thêm
 ---

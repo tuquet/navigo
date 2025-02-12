@@ -12,8 +12,8 @@ Hướng dẫn cài đặt và sử dụng ứng dụng `Navigo` trên máy tín
 
 Trước khi bắt đầu, hãy đảm bảo rằng môi trường của bạn đáp ứng các yêu cầu sau:
 
+- Hệ điều hành Window (Sẽ hỗ trợ thêm các hệ điều hành khác trong tương lai).
 - Đăng ký tài khoản người dùng trên hệ thống [https://id.tfsoftware.vn](https://id.tfsoftware.vn).
-- Sử dụnng Window (Sẽ hỗ trợ thêm các hệ điều hành khác trong tương lai).
 
 :::
 
