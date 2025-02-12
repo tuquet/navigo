@@ -40,12 +40,15 @@ export const vi = defineConfig({
     returnToTopLabel: 'Quay lại đầu',
 
     sidebar: {
+      '/browser-automation/': {
+        base: '/browser-automation/',
+        items: sidebarWorkflow(),
+      },
       '/commercial/': {
         base: '/commercial/',
         items: sidebarCommercial(),
       },
       '/guide/': { base: '/guide/', items: sidebarGuide() },
-      '/workflow/': { base: '/workflow/', items: sidebarWorkflow() },
     },
     sidebarMenuLabel: 'Menu',
   },
@@ -117,7 +120,7 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
       items: [
         {
           base: '/',
-          link: 'workflow/introduction',
+          link: 'browser-automation/introduction',
           text: 'Tự động hóa trình duyệt',
         },
       ],
@@ -154,14 +157,19 @@ function sidebarWorkflow(): DefaultTheme.SidebarItem[] {
       ],
     },
     {
-      collapsed: false,
+      collapsed: true,
       text: 'Quy trình',
-      items: [],
+      items: sidebarBrowserAutomationWorkflows(),
     },
     {
       collapsed: false,
       text: 'Khối',
-      items: [],
+      items: sidebarBrowserAutomationBlock(),
+    },
+    {
+      collapsed: true,
+      text: 'Nâng cao',
+      items: sidebarBrowserAutomationReference(),
     },
     {
       collapsed: false,
@@ -202,8 +210,8 @@ function nav(): DefaultTheme.NavItem[] {
           text: 'Hướng dẫn cơ bản',
         },
         {
-          activeMatch: '^/workflow/',
-          link: '/workflow/introduction',
+          activeMatch: '^/browser-automation/',
+          link: '/browser-automation/introduction',
           text: 'Tự động hóa trình duyệt',
         },
       ],
@@ -220,6 +228,318 @@ function nav(): DefaultTheme.NavItem[] {
     {
       link: 'https://id.tfsoftware.vn',
       text: 'Đăng nhập',
+    },
+  ];
+}
+
+function sidebarBrowserAutomationWorkflows(): DefaultTheme.SidebarItem[] {
+  return [
+    { link: '/workflow/overview', text: 'Overview' },
+    {
+      link: '/workflow/running-a-workflow',
+      text: 'Running a Workflow',
+    },
+    { link: '/workflow/blocks', text: 'Blocks' },
+    { link: '/workflow/sharing-workflow', text: 'Sharing a Workflow' },
+    { link: '/workflow/global-data', text: 'Global Data' },
+    { link: '/workflow/table', text: 'Table' },
+    { link: '/workflow/variables', text: 'Variables' },
+    { link: '/workflow/table-or-variable', text: 'Table or Variable' },
+    { link: '/workflow/parameters', text: 'Parameters' },
+    { link: '/workflow/settings', text: 'Settings' },
+    { link: '/workflow/debug-mode', text: 'Debug Mode' },
+    { link: '/workflow/element-selector', text: 'Element Selector' },
+    { link: '/workflow/expressions', text: 'Expressions' },
+    { link: '/workflow/looping', text: 'Looping' },
+    { link: '/workflow/testing-mode', text: 'Testing mode' },
+  ];
+}
+
+function sidebarBrowserAutomationBlock(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      collapsed: true,
+      text: 'General',
+      items: [
+        {
+          link: '/blocks/trigger.md',
+          text: 'Trigger Block',
+        },
+        {
+          link: '/blocks/execute-workflow.md',
+          text: 'Execute Workflow Block',
+        },
+        {
+          link: '/blocks/delay.md',
+          text: 'Delay Block',
+        },
+        {
+          link: '/blocks/export-data.md',
+          text: 'Export Data Block',
+        },
+        {
+          link: '/blocks/webhook.md',
+          text: 'HTTP Request Block',
+        },
+        {
+          link: '/blocks/blocks-group.md',
+          text: 'Blocks Group Block',
+        },
+        {
+          link: '/blocks/clipboard.md',
+          text: 'Clipboard Block',
+        },
+        {
+          link: '/blocks/wait-connections.md',
+          text: 'Wait Connections Block',
+        },
+        {
+          link: '/blocks/notification.md',
+          text: 'Notification Block',
+        },
+        {
+          link: '/blocks/workflow-state.md',
+          text: 'Workflow State Block',
+        },
+        {
+          link: '/blocks/parameter-prompt.md',
+          text: 'Parameter Prompt Block',
+        },
+      ],
+    },
+    {
+      collapsed: true,
+      text: 'Browser',
+      items: [
+        {
+          link: '/blocks/active-tab.md',
+          text: 'Active Tab Block',
+        },
+        {
+          link: '/blocks/new-tab.md',
+          text: 'New Tab Block',
+        },
+        {
+          link: '/blocks/switch-tab.md',
+          text: 'Switch Tab Block',
+        },
+        {
+          link: '/blocks/new-window.md',
+          text: 'New Window Block',
+        },
+        {
+          link: '/blocks/proxy.md',
+          text: 'Proxy Block',
+        },
+        {
+          link: '/blocks/go-back.md',
+          text: 'Go Back Block',
+        },
+        {
+          link: '/blocks/go-forward.md',
+          text: 'Go Forward Block',
+        },
+        {
+          link: '/blocks/close-tab.md',
+          text: 'Close Tab/window Block',
+        },
+        {
+          link: '/blocks/take-screenshot.md',
+          text: 'Take Screenshot Block',
+        },
+        {
+          link: '/blocks/browser-event.md',
+          text: 'Browser Event Block',
+        },
+        {
+          link: '/blocks/handle-dialog.md',
+          text: 'Handle Dialog Block',
+        },
+        {
+          link: '/blocks/handle-download.md',
+          text: 'Handle Download Block',
+        },
+        {
+          link: '/blocks/reload-tab.md',
+          text: 'Reload Tab Block',
+        },
+        {
+          link: '/blocks/tab-url.md',
+          text: 'Get Tab Url Block',
+        },
+        {
+          link: '/blocks/cookie.md',
+          text: 'Cookie Block',
+        },
+      ],
+    },
+    {
+      collapsed: true,
+      text: 'Web Interaction',
+      items: [
+        {
+          link: '/blocks/event-click.md',
+          text: 'Click Element Block',
+        },
+        {
+          link: '/blocks/get-text.md',
+          text: 'Get Text Block',
+        },
+        {
+          link: '/blocks/element-scroll.md',
+          text: 'Scroll Element Block',
+        },
+        {
+          link: '/blocks/link.md',
+          text: 'Link Block',
+        },
+        {
+          link: '/blocks/attribute-value.md',
+          text: 'Attribute Value Block',
+        },
+        {
+          link: '/blocks/forms.md',
+          text: 'Forms Block',
+        },
+        {
+          link: '/blocks/javascript-code.md',
+          text: 'Javascript Code Block',
+        },
+        {
+          link: '/blocks/trigger-event.md',
+          text: 'Trigger Event Block',
+        },
+        {
+          link: '/blocks/switch-to.md',
+          text: 'Switch Frame Block',
+        },
+        {
+          link: '/blocks/upload-file.md',
+          text: 'Upload File Block',
+        },
+        {
+          link: '/blocks/hover-element.md',
+          text: 'Hover Element Block',
+        },
+        {
+          link: '/blocks/save-assets.md',
+          text: 'Save Assets Block',
+        },
+        {
+          link: '/blocks/press-key.md',
+          text: 'Press Key Block',
+        },
+        {
+          link: '/blocks/create-element.md',
+          text: 'Create Element Block',
+        },
+      ],
+    },
+    {
+      collapsed: true,
+      text: 'Control Flow',
+      items: [
+        {
+          link: '/blocks/repeat-task.md',
+          text: 'Repeat Task Block',
+        },
+        {
+          link: '/blocks/conditions.md',
+          text: 'Conditions Block',
+        },
+        {
+          link: '/blocks/element-exists.md',
+          text: 'Element Exists Block',
+        },
+        {
+          link: '/blocks/while-loop.md',
+          text: 'While Loop Block',
+        },
+        {
+          link: '/blocks/loop-data.md',
+          text: 'Loop Data Block',
+        },
+        {
+          link: '/blocks/loop-elements.md',
+          text: 'Loop Elements Block',
+        },
+        {
+          link: '/blocks/loop-breakpoint.md',
+          text: 'Loop Breakpoint Block',
+        },
+      ],
+    },
+    {
+      collapsed: true,
+      text: 'Online Services',
+      items: [
+        {
+          link: '/blocks/google-sheets.md',
+          text: 'Google Sheets Block',
+        },
+        {
+          link: '/blocks/google-sheets-drive.md',
+          text: 'Google Sheets (GDrive) Block',
+        },
+        {
+          link: '/blocks/google-drive.md',
+          text: 'Google Drive Block',
+        },
+      ],
+    },
+    {
+      collapsed: true,
+      text: 'Data',
+      items: [
+        {
+          link: '/blocks/insert-data.md',
+          text: 'Insert Data Block',
+        },
+        {
+          link: '/blocks/delete-data.md',
+          text: 'Delete Data Block',
+        },
+        {
+          link: '/blocks/log-data.md',
+          text: 'Get Log Data Block',
+        },
+        {
+          link: '/blocks/slice-variable.md',
+          text: 'Slice Variable Block',
+        },
+        {
+          link: '/blocks/increase-variable.md',
+          text: 'Increase Variable Block',
+        },
+        {
+          link: '/blocks/regex-variable.md',
+          text: 'Regex Variable Block',
+        },
+        {
+          link: '/blocks/data-mapping.md',
+          text: 'Data Mapping Block',
+        },
+        {
+          link: '/blocks/sort-data.md',
+          text: 'Sort Data Block',
+        },
+      ],
+    },
+  ];
+}
+
+function sidebarBrowserAutomationReference(): DefaultTheme.SidebarItem[] {
+  return [
+    { link: '/reference/storage', text: 'Storage' },
+    { link: '/reference/packages', text: 'Packages' },
+    { link: '/reference/condition-builder', text: 'Condition Builder' },
+    {
+      link: '/reference/workflow-common-errors',
+      text: 'Workflow Common Errors',
+    },
+    {
+      link: '/reference/javascript-execution-context',
+      text: 'JavaScript Execution Context',
     },
   ];
 }
