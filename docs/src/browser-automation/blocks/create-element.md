@@ -21,7 +21,7 @@ Create an element and insert it into the page.
 
 - **JavaScript**<br> The JavaScript that will be injected into the page
 
-  - **`automaRefData(keyword, path?)` function**<br> Use this function to [reference data](../workflow/expressions.md). <br> For more detail open the [Javascript Block page](/blocks/javascript-code.html#automarefdata-keyword-path)
+  - **`automaRefData(keyword, path?)` function**<br> Use this function to [reference data](../workflow/expressions.md). <br> For more detail open the [Javascript Block page](/browser-automation/blocks/javascript-code.html#automarefdata-keyword-path)
   - **`automaExecWorkflow(detail)` function**<br> Function for executing a workflow. <br> The `detail` parameter is where you input the detail of the workflow like the id or `publicId` of the workflow you want to execute. For example,
 
     ```js

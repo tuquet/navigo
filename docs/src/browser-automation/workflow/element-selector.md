@@ -16,7 +16,7 @@ You'll find these options when editing a block that requires an element selector
 
 Select multiple elements that match the selector. By default, Automa only selects the first element that matches the Selector.
 
-For example, when using the [Get Text block](/blocks/get-text.md) with `p` as the selector. Instead of retrieving text content from the first element that matches the selector, Automa will retrieve all the text content from the matches elements.
+For example, when using the [Get Text block](/browser-automation/blocks/get-text.md) with `p` as the selector. Instead of retrieving text content from the first element that matches the selector, Automa will retrieve all the text content from the matches elements.
 
 ### Mark Element
 
@@ -26,7 +26,7 @@ For example, when you have a workflow like this
 
 ![Workflow example](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/16sv6t-9g.png)
 
-and the [Get Text block](/blocks/get-text.md) using `.text` as the element selector, and the website [DOM tree](https://en.wikipedia.org/wiki/Document_Object_Model).
+and the [Get Text block](/browser-automation/blocks/get-text.md) using `.text` as the element selector, and the website [DOM tree](https://en.wikipedia.org/wiki/Document_Object_Model).
 
 ```html
 <div>
@@ -37,7 +37,7 @@ and the [Get Text block](/blocks/get-text.md) using `.text` as the element selec
 </div>
 ```
 
-When the [Get Text block](/blocks/get-text.md) is being executed, it gets the first element that matches the selector which is `<p class="text" id="1">Text</p>` and because the mark element option is enabled, it will mark the element and look like this `<p class="text" id="1" block--block-id>Text</p>`.
+When the [Get Text block](/browser-automation/blocks/get-text.md) is being executed, it gets the first element that matches the selector which is `<p class="text" id="1">Text</p>` and because the mark element option is enabled, it will mark the element and look like this `<p class="text" id="1" block--block-id>Text</p>`.
 
 ```html
 <div>

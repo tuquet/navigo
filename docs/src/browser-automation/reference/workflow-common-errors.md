@@ -18,15 +18,15 @@ The Match Patterns you input don't match with any URLs tab. See how to write mat
 
 ## Content body is not valid JSON {#invalid-body}
 
-The request body in the [HTTP Request block](/blocks/webhook.md) is not in [JSON format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON#json_structure).
+The request body in the [HTTP Request block](/browser-automation/blocks/webhook.md) is not in [JSON format](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON#json_structure).
 
-If you're trying to referencing data inside the body. You can follow [these guidelines](/blocks/webhook.md#referencing-data-inside-body).
+If you're trying to referencing data inside the body. You can follow [these guidelines](/browser-automation/blocks/webhook.md#referencing-data-inside-body).
 
 ## Can't connect to a tab, use "New tab" or "Active tab" block before using the "{name}" block. {#no-tab}
 
 This happened because the block you're trying to use requires an active tab to work. An active tab in this context is a tab where the block will execute.
 
-To solve this, you can either use a [New Tab block](/blocks/new-tab.md) or an [Active Tab block](/blocks/active-tab.md) before the block you're trying to use.
+To solve this, you can either use a [New Tab block](/browser-automation/blocks/new-tab.md) or an [Active Tab block](/browser-automation/blocks/active-tab.md) before the block you're trying to use.
 
 ![no tab](https://s3.ap-southeast-1.amazonaws.com/automa-pub/i/2024/12/02/17g8kk-x0.png)
 
