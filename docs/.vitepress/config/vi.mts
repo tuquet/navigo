@@ -67,18 +67,6 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         },
         { link: 'introduction/setup', text: 'Hướng dẫn cơ bản' },
         { link: 'introduction/quick-start', text: 'Bắt đầu nhanh' },
-        // { link: 'introduction/thin', text: 'Phiên bản Lite' },
-      ],
-    },
-    {
-      collapsed: false,
-      text: 'Tài liệu khác',
-      items: [
-        {
-          base: '/',
-          link: 'workflow/introduction',
-          text: 'Tự động hóa trình duyệt',
-        },
       ],
     },
     {
@@ -123,60 +111,17 @@ function sidebarGuide(): DefaultTheme.SidebarItem[] {
         },
       ],
     },
-    // {
-    //   text: 'Căn cứ',
-    //   items: [
-    //     { link: 'essentials/concept', text: 'Khái niệm cơ bản' },
-    //     { link: 'essentials/development', text: 'Phát triển địa phương' },
-    //     { link: 'essentials/route', text: 'Định tuyến và thực đơn' },
-    //     { link: 'essentials/settings', text: 'Cấu hình' },
-    //     { link: 'essentials/icons', text: 'biểu tượng' },
-    //     { link: 'essentials/styles', text: 'phong cách' },
-    //     { link: 'essentials/external-module', text: 'Các mô -đun bên ngoài' },
-    //     { link: 'essentials/build', text: 'Xây dựng và triển khai' },
-    //     {
-    //       link: 'essentials/server',
-    //       text: 'Tương tác máy chủ và giả định dữ liệu',
-    //     },
-    //   ],
-    // },
-    // {
-    //   text: 'Chuyên sâu',
-    //   items: [
-    //     { link: 'in-depth/login', text: 'Đăng nhập' },
-    //     // { link: 'in-depth/layout', text: '布局' },
-    //     { link: 'in-depth/theme', text: 'Chủ đề' },
-    //     { link: 'in-depth/access', text: 'Quyền' },
-    //     { link: 'in-depth/locale', text: 'Quốc tế hóa' },
-    //     { link: 'in-depth/features', text: 'Các chức năng phổ biến' },
-    //     { link: 'in-depth/check-updates', text: 'Kiểm tra cập nhật' },
-    //     { link: 'in-depth/loading', text: 'Tải toàn cầu' },
-    //     {
-    //       link: 'in-depth/ui-framework',
-    //       text: 'Chuyển đổi thư viện thành phần',
-    //     },
-    //   ],
-    // },
-    // {
-    //   text: 'Dự án',
-    //   items: [
-    //     { link: 'project/standard', text: 'Đặc điểm kỹ thuật' },
-    //     { link: 'project/cli', text: 'CLI' },
-    //     { link: 'project/dir', text: 'Mục lục Mô tả' },
-    //     { link: 'project/test', text: 'Kiểm tra đơn vị' },
-    //     { link: 'project/tailwindcss', text: 'Tailwind CSS' },
-    //     { link: 'project/changeset', text: 'Changeset' },
-    //     { link: 'project/vite', text: 'Vite Config' },
-    //   ],
-    // },
-    // {
-    //   text: 'Khác',
-    //   items: [
-    //     { link: 'other/project-update', text: 'Cập nhật dự án' },
-    //     { link: 'other/remove-code', text: 'Xóa mã' },
-    //     { link: 'other/faq', text: 'Câu hỏi thường gặp' },
-    //   ],
-    // },
+    {
+      collapsed: false,
+      text: 'Tài liệu khác',
+      items: [
+        {
+          base: '/',
+          link: 'workflow/introduction',
+          text: 'Tự động hóa trình duyệt',
+        },
+      ],
+    },
   ];
 }
 
@@ -218,6 +163,17 @@ function sidebarWorkflow(): DefaultTheme.SidebarItem[] {
       text: 'Khối',
       items: [],
     },
+    {
+      collapsed: false,
+      text: 'Tài liệu khác',
+      items: [
+        {
+          base: '/',
+          link: '../guide/introduction/setup',
+          text: 'Hướng dẫn cơ bản',
+        },
+      ],
+    },
   ];
 }
 
@@ -255,15 +211,15 @@ function nav(): DefaultTheme.NavItem[] {
     {
       activeMatch: '^/commercial/',
       link: '/commercial/community',
-      text: 'Hỗ trợ',
-    },
-    {
-      link: 'https://id.tfsoftware.vn',
-      text: 'Đăng nhập',
+      text: 'Cộng đồng',
     },
     {
       link: '/sponsor/personal',
       text: 'Tài trợ',
+    },
+    {
+      link: 'https://id.tfsoftware.vn',
+      text: 'Đăng nhập',
     },
   ];
 }

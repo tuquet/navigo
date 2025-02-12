@@ -52,6 +52,18 @@ export const shared = defineConfig({
         icon: 'github',
         link: 'https://github.com/tuquet/navigo/releases',
       },
+      {
+        icon: 'facebook',
+        link: 'https://www.facebook.com/groups/1736733590245766',
+      },
+      {
+        icon: 'telegram',
+        link: 'https://t.me/tfsoftware',
+      },
+      {
+        icon: 'youtube',
+        link: 'https://www.youtube.com/channel/UC76eew60GIR1taDB0RzS3Rg',
+      },
     ],
   },
   title: 'TF Software',

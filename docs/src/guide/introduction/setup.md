@@ -23,4 +23,8 @@ Trước khi bắt đầu, hãy đảm bảo rằng môi trường của bạn �
 - Cài đặt thành công ứng dụng `Navigo` trên máy tính của bạn.
 - Đăng nhập vào ứng dụng `Navigo` khoản người dùng.
 
-::: tip Note [Video Hướng Dẫn](https://www.youtube.com/watch?v=3QOvzv9J6ZM) để biết cách cài đặt và sử dụng phần mềm. :::
+::: tip Note
+
+[Video Hướng Dẫn](https://www.youtube.com/watch?v=3QOvzv9J6ZM) để biết cách cài đặt và sử dụng phần mềm.
+
+:::
