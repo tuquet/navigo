@@ -152,12 +152,14 @@ function head(): HeadConfig[] {
     ],
     ['meta', { content: 'navigo docs', name: 'keywords' }],
     ['link', { href: '/favicon.ico', rel: 'icon' }],
-    // [
-    //   'script',
-    //   {
-    //     src: 'https://cdn.tailwindcss.com',
-    //   },
-    // ],
+    [
+      'script',
+      {
+        'data-website-id': 'd8fbe70c-3cc0-4f6c-a0a4-2ffcab1ca500',
+        defer: 'true',
+        src: 'https://cloud.umami.is/script.js',
+      },
+    ],
   ];
 }
 
