@@ -2,24 +2,24 @@
 outline: deep
 ---
 
-# Access Control
+# Kiểm Soát Truy Cập
 
-The framework has built-in two types of access control methods:
+Framework được tích hợp sẵn hai loại phương pháp kiểm soát truy cập:
 
-- Determining whether a menu or button can be accessed based on user roles
-- Determining whether a menu or button can be accessed through an API
+- Xác định xem một menu hoặc nút có thể được truy cập dựa trên vai trò người dùng hay không
+- Xác định xem một menu hoặc nút có thể được truy cập thông qua một API hay không
 
-## Frontend Access Control
+## Kiểm Soát Truy Cập Frontend
 
-**Implementation Principle**: The permissions for routes are hardcoded on the frontend, specifying which permissions are required to view certain routes. Only general routes are initialized, and routes that require permissions are not added to the route table. After logging in or obtaining user roles through other means, the roles are used to traverse the route table to generate a route table that the role can access. This table is then added to the router instance using `router.addRoute`, achieving permission filtering.
+**Nguyên tắc triển khai**: Quyền cho các route được mã hóa cứng (hardcoded) ở frontend, chỉ định những quyền nào là bắt buộc để xem một số route nhất định. Chỉ các route chung được khởi tạo, còn các route yêu cầu quyền thì không được thêm vào bảng route. Sau khi đăng nhập hoặc thu được vai trò người dùng thông qua các phương tiện khác, các vai trò này được sử dụng để duyệt qua bảng route nhằm tạo ra một bảng route mà vai trò đó có thể truy cập. Bảng này sau đó được thêm vào instance router bằng cách sử dụng `router.addRoute`, đạt được việc lọc quyền.
 
-**Disadvantage**: The permissions are relatively inflexible; if the backend changes roles, the frontend needs to be adjusted accordingly. This is suitable for systems with relatively fixed roles.
+**Nhược điểm**: Các quyền tương đối kém linh hoạt; nếu backend thay đổi vai trò, frontend cần được điều chỉnh tương ứng. Cách này phù hợp với các hệ thống có vai trò tương đối cố định.
 
-### Steps
+### Các bước
 
-- Ensure the current mode is set to frontend access control
+- Đảm bảo chế độ hiện tại được đặt thành kiểm soát truy cập frontend.
 
-Adjust `preferences.ts` in the corresponding application directory to ensure `accessMode='frontend'`.
+Điều chỉnh `preferences.ts` trong thư mục ứng dụng tương ứng để đảm bảo `accessMode='frontend'`.
 
 ```ts
 import { defineOverridesPreferences } from '@vben/preferences';
@@ -27,15 +27,15 @@ import { defineOverridesPreferences } from '@vben/preferences';
 export const overridesPreferences = defineOverridesPreferences({
   // overrides
   app: {
-    // Default value, optional
+    // Giá trị mặc định, tùy chọn
     accessMode: 'frontend',
   },
 });
 ```
 
-- Configure route permissions
+- Cấu hình quyền truy cập route.
 
-#### If not configured, it is visible by default
+#### Nếu không được cấu hình, nó sẽ hiển thị mặc định.
 
 ```ts {3}
  {
@@ -45,21 +45,21 @@ export const overridesPreferences = defineOverridesPreferences({
 },
 ```
 
-- Ensure the roles returned by the interface match the permissions in the route table
+- Đảm bảo các vai trò được trả về bởi giao diện (interface) khớp với các quyền trong bảng route.
 
-You can look under `src/store/auth` in the application to find the following code:
+Bạn có thể tìm trong `src/store/auth` trong ứng dụng để tìm đoạn code sau:
 
 ```ts
-// Set the login user information, ensuring that userInfo.roles is an array and contains permissions from the route table
-// For example: userInfo.roles=['super', 'admin']
+// Thiết lập thông tin người dùng đăng nhập, đảm bảo rằng userInfo.roles là một mảng và chứa các quyền từ bảng route
+// Ví dụ: userInfo.roles=['super', 'admin']
 authStore.setUserInfo(userInfo);
 ```
 
-At this point, the configuration is complete. You need to ensure that the roles returned by the interface after login match the permissions in the route table; otherwise, access will not be possible.
+Đến thời điểm này, cấu hình đã hoàn tất. Bạn cần đảm bảo rằng các vai trò được trả về bởi giao diện sau khi đăng nhập khớp với các quyền trong bảng route; nếu không, quyền truy cập sẽ không khả thi.
 
-### Menu Visible but Access Forbidden
+### Menu Hiển Thị Nhưng Bị Cấm Truy Cập
 
-Sometimes, we need the menu to be visible but access to it forbidden. This can be achieved by setting `menuVisibleWithForbidden` to `true`. In this case, the menu will be visible, but access will be forbidden, redirecting to a 403 page.
+Đôi khi, chúng ta cần menu hiển thị nhưng cấm truy cập vào nó. Điều này có thể đạt được bằng cách đặt `menuVisibleWithForbidden` thành `true`. In this case, Trong trường hợp này, menu sẽ hiển thị, nhưng quyền truy cập sẽ bị cấm, chuyển hướng đến trang 403.
 
 ```ts
 {
@@ -69,32 +69,33 @@ Sometimes, we need the menu to be visible but access to it forbidden. This can b
 },
 ```
 
-## Backend Access Control
+## Kiểm Soát Truy Cập Backend
 
-**Implementation Principle**: It is achieved by dynamically generating a routing table through an API, which returns data following a certain structure. The frontend processes this data into a recognizable structure, then adds it to the routing instance using `router.addRoute`, realizing the dynamic generation of permissions.
+**Nguyên tắc triển khai**: Điều này đạt được bằng cách tạo động một bảng routing thông qua một API, API này trả về dữ liệu tuân theo một cấu trúc nhất định. Frontend xử lý dữ liệu này thành một cấu trúc dễ nhận biết, sau đó thêm nó vào routing instance bằng cách sử dụng `router.addRoute`, hiện thực hóa việc tạo động các quyền.
 
-**Disadvantage**: The backend needs to provide a data structure that meets the standards, and the frontend needs to process this structure. This is suitable for systems with more complex permissions.
+**Nhược điểm**: Backend cần cung cấp một cấu trúc dữ liệu đáp ứng các tiêu chuẩn, và frontend cần xử lý cấu trúc này. Điều này phù hợp với các hệ thống có các quyền phức tạp hơn.
 
-### Steps
+### Các bước
 
-- Ensure the current mode is set to backend access control
+- Đảm bảo chế độ hiện tại được đặt thành kiểm soát truy cập backend.
 
-Adjust `preferences.ts` in the corresponding application directory to ensure `accessMode='backend'`.
+Điều chỉnh  `preferences.ts` trong thư mục ứng dụng tương ứng để đảm bảo `accessMode='backend'`.
 
 ```ts
 import { defineOverridesPreferences } from '@vben/preferences';
 
 export const overridesPreferences = defineOverridesPreferences({
-  // overrides
+  // ghi đè
   app: {
+  // Giá trị mặc định, tùy chọn
     accessMode: 'backend',
   },
 });
 ```
 
-- Ensure the structure of the menu data returned by the interface is correct
+- Đảm bảo cấu trúc của dữ liệu menu được trả về bởi giao diện là chính xác.
 
-You can look under `src/router/access.ts` in the application to find the following code:
+Bạn có thể tìm trong `src/router/access.ts` trong ứng dụng để tìm đoạn code sau:
 
 ```ts
 async function generateAccess(options: GenerateMenuAndRoutesOptions) {
@@ -107,9 +108,9 @@ async function generateAccess(options: GenerateMenuAndRoutesOptions) {
 }
 ```
 
-- Interface returns menu data, see comments for explanation
+- Giao diện trả về dữ liệu menu, xem phần bình luận để biết giải thích.
 
-::: details Example of Interface Returning Menu Data
+::: details Ví dụ về Giao diện trả về Dữ liệu Menu
 
 ```ts
 const dashboardMenus = [
@@ -149,15 +150,15 @@ const dashboardMenus = [
 
 :::
 
-At this point, the configuration is complete. You need to ensure that after logging in, the format of the menu returned by the interface is correct; otherwise, access will not be possible.
+Đến thời điểm này, cấu hình đã hoàn tất. Bạn cần đảm bảo rằng sau khi đăng nhập, định dạng của menu được trả về bởi giao diện là chính xác; nếu không, quyền truy cập sẽ không khả thi.
 
-## Fine-grained Control of Buttons
+## Kiểm Soát Chi Tiết Các Nút
 
-In some cases, we need to control the display of buttons with fine granularity. We can control the display of buttons through interfaces or roles.
+Trong một số trường hợp, chúng ta cần kiểm soát việc hiển thị các nút với độ chi tiết cao. Chúng ta có thể kiểm soát việc hiển thị các nút thông qua các giao diện hoặc vai trò.
 
-### Permission Code
+### Code Phân Quyền
 
-The permission code is the code returned by the interface. The logic to determine whether a button is displayed is located under `src/store/auth`:
+Code phân quyền là code được trả về bởi giao diện. Logic để xác định xem một nút có được hiển thị hay không nằm ở `src/store/auth`:
 
 ```ts
 const [fetchUserInfoResult, accessCodes] = await Promise.all([
@@ -170,13 +171,13 @@ authStore.setUserInfo(userInfo);
 accessStore.setAccessCodes(accessCodes);
 ```
 
-Locate the `getAccessCodes` corresponding interface, which can be adjusted according to business logic.
+Tìm giao diện `getAccessCodes` tương ứng, giao diện này có thể được điều chỉnh theo logic nghiệp vụ.
 
-The data structure returned by the permission code is an array of strings, for example: `['AC_100100', 'AC_100110', 'AC_100120', 'AC_100010']`
+Cấu trúc dữ liệu được trả về bởi code phân quyền là một mảng các chuỗi, ví dụ: `['AC_100100', 'AC_100110', 'AC_100120', 'AC_100010']`
 
-With the permission codes, you can use the `AccessControl` component and API provided by `@vben/access` to show and hide buttons.
+Với các code phân quyền, bạn có thể sử dụng component `AccessControl` và API được cung cấp bởi `@vben/access` để hiển thị và ẩn các nút.
 
-#### Component Method
+#### Phương thức Component
 
 ```vue
 <script lang="ts" setup>
@@ -204,7 +205,7 @@ const { accessMode, hasAccessByCodes } = useAccess();
 </template>
 ```
 
-#### API Method
+#### Phương thức API
 
 ```vue
 <script lang="ts" setup>
@@ -229,9 +230,9 @@ const { hasAccessByCodes } = useAccess();
 </template>
 ```
 
-#### Directive Method
+#### Phương thức Directive
 
-> The directive supports binding single or multiple permission codes. For a single one, you can pass a string or an array containing one permission code, and for multiple permission codes, you can pass an array.
+> Directive hỗ trợ binding một hoặc nhiều code phân quyền. Đối với một code duy nhất, bạn có thể truyền một chuỗi hoặc một mảng chứa một code phân quyền và đối với nhiều code phân quyền, bạn có thể truyền một mảng.
 
 ```vue
 <template>
@@ -250,11 +251,11 @@ const { hasAccessByCodes } = useAccess();
 </template>
 ```
 
-### Roles
+### Vai trò
 
-The method of determining roles does not require permission codes returned by the interface; it directly determines whether buttons are displayed based on roles.
+Phương thức xác định vai trò không yêu cầu code phân quyền được trả về bởi giao diện; nó trực tiếp xác định xem các nút có được hiển thị hay không dựa trên vai trò.
 
-#### Component Method
+#### Phương thức Component
 
 ```vue
 <script lang="ts" setup>
@@ -277,7 +278,7 @@ import { AccessControl } from '@vben/access';
 </template>
 ```
 
-#### API Method
+#### Phương thức API
 
 ```vue
 <script lang="ts" setup>
@@ -296,9 +297,9 @@ const { hasAccessByRoles } = useAccess();
 </template>
 ```
 
-#### Directive Method
+#### Phương thức Directive
 
-> The directive supports binding single or multiple permission codes. For a single one, you can pass a string or an array containing one permission code, and for multiple permission codes, you can pass an array.
+> Directive hỗ trợ binding một hoặc nhiều code phân quyền. Đối với một code duy nhất, bạn có thể truyền một chuỗi hoặc một mảng chứa một code phân quyền và đối với nhiều code phân quyền, bạn có thể truyền một mảng.
 
 ```vue
 <template>
