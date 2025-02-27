@@ -20,7 +20,7 @@ export const en = defineConfig({
     },
     footer: {
       copyright: `Copyright © 2020-${new Date().getFullYear()} TF Software.`,
-      message: `<a href="/privacy-policy.html">Privacy and policy</a>`,
+      message: `<a href="https://www.tfsoftware.vn/privacy-policy.html">Privacy and policy</a>`,
     },
     langMenuLabel: 'Language',
     lastUpdated: {
