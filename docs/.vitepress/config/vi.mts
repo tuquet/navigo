@@ -20,8 +20,13 @@ export const vi = defineConfig({
       text: 'Chỉnh sửa trang này',
     },
     footer: {
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Navigo.`,
-      message: 'Một sản phẩm của TFSoftware.',
+      copyright: `Copyright © 2020-${new Date().getFullYear()} TF Software.`,
+      message: `
+      <div>
+        <a href="/privacy-policy">Chính Sách Và Điều Khoản Bảo Mật</a>
+        <p> Giải pháp phần mềm tối ưu - Đột phá hiệu suất kinh doanh </p>
+      </div>
+      `,
     },
     langMenuLabel: 'Đa ngôn ngữ',
     lastUpdated: {
