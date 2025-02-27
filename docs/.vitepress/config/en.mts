@@ -19,8 +19,8 @@ export const en = defineConfig({
       text: 'Edit this page on GitHub',
     },
     footer: {
-      copyright: `Copyright © 2020-${new Date().getFullYear()} TFSoftware`,
-      message: 'A product of TFSoftware.',
+      copyright: `Copyright © 2020-${new Date().getFullYear()} TF Software.`,
+      message: `<a href="/privacy-policy.html">Privacy and policy</a>`,
     },
     langMenuLabel: 'Language',
     lastUpdated: {

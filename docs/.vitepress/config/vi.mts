@@ -21,12 +21,7 @@ export const vi = defineConfig({
     },
     footer: {
       copyright: `Copyright © 2020-${new Date().getFullYear()} TF Software.`,
-      message: `
-      <div>
-        <a href="/privacy-policy">Chính Sách Và Điều Khoản Bảo Mật</a>
-        <p> Giải pháp phần mềm tối ưu - Đột phá hiệu suất kinh doanh </p>
-      </div>
-      `,
+      message: `<a href="/privacy-policy.html">Chính Sách Và Điều Khoản Bảo Mật</a>`,
     },
     langMenuLabel: 'Đa ngôn ngữ',
     lastUpdated: {
