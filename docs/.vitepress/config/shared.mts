@@ -36,7 +36,7 @@ export const shared = defineConfig({
   srcDir: 'src',
   themeConfig: {
     i18nRouting: true,
-    logo: 'https://unpkg.com/@tfsoft/static-source@1.0.1/static/logo-white.png',
+    logo: 'https://unpkg.com/@tfsoft/static-source@1.0.1/static/logo-square.png',
     search: {
       options: {
         locales: {
